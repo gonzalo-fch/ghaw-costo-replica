@@ -185,8 +185,8 @@ clasificación con más casos y calcular las distribuciones y comparaciones del 
 ## Paquete de réplica
 
 - Repositorio de GitHub: <https://github.com/gonzalo-fch/ghaw-costo-replica>
-- Registro en Zenodo (DOI): `https://doi.org/10.5281/zenodo.<ID>` (pendiente de publicación)
-- Versión (tag/commit): `<TAG-o-SHA>`
+- Registro en Zenodo (DOI): <https://doi.org/10.5281/zenodo.23181576>
+- Versión (tag/commit): `v0.2-etapa2`
 
 El paquete es parcial y se ampliará durante el desarrollo de la investigación.
 
