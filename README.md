@@ -23,7 +23,7 @@ El costo total tiene dos componentes independientes:
 1. **GitHub Actions minutes** (cómputo del runner).
 2. **Inferencia de IA**, medida por gh-aw como **AI Credits (AIC)** (`1 AIC = 0,01 USD`).
 
-Regla de oro del proyecto: **no dar por bueno un número si no podemos decir de dónde
+Regla de oro del proyecto: **no dar por bueno un número sin poder indicar de dónde
 viene, cómo se obtuvo y qué transformación recibió.**
 
 ## Conjunto de casos (resultados preliminares)
@@ -138,13 +138,13 @@ python3 billing/extract_run_billing.py --repo vaadin/flow 36728232182
 
 ### Notas
 
-- El flujo `from_dataset_to_billing.py` **acumula** por repositorio: si lo corres dos
+- El flujo `from_dataset_to_billing.py` **acumula** por repositorio: si se ejecuta dos
   veces para `microsoft/vstest`, conserva ambos runs (no se pisan).
 - **Restricciones:** la re-extracción depende de la API de GitHub y de la retención de
   artefactos (≈90 días), por lo que el AIC podría no estar disponible en runs antiguos.
   **Ningún resultado del informe se ve afectado**, porque la evidencia está conservada.
-- Si solo necesitas el componente de GitHub Actions (sin AIC), usa `--skip-ghaw` con
-  `extract_run_billing.py`.
+- Si solo se necesita el componente de GitHub Actions (sin AIC), se usa `--skip-ghaw`
+  con `extract_run_billing.py`.
 
 ## Procedencia de los datos
 

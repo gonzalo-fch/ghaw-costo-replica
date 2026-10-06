@@ -305,7 +305,7 @@ def fetch_ai_usage(repo, run_id, workdir):
 
     # ------------------------------------------------------------------
     # FALLBACK 2: agregar token_usage.jsonl (agent/detection/evals)
-    #   OJO: el nombre real del archivo usa guion bajo.
+    #   Nota: el nombre real del archivo usa guion bajo.
     #   Se ejecuta SIEMPRE para dejar aic_from_records (reconciliación),
     #   pero solo rellena aic/tokens si la fuente preferida no los trajo.
     # ------------------------------------------------------------------

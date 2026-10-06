@@ -162,7 +162,7 @@ python billing/from_dataset_to_billing.py --repo vaadin/flow --run 36728232182
 
 1. **Dataset → repo.** Lee `repository` y busca `vaadin/flow` (se pagina y cachea en `billing/dataset_cache/`).
 2. **Dataset → workflow.** Lee `source_markdown_file_snapshot`, toma `doc-bot.md` y deriva `doc-bot.lock.yml`.
-3. **Workflow → run.** Con `gh api .../actions/workflows` ubica el workflow y sus runs; con `--run` fija el run concreto; si no, elige el más reciente cuyo `agent` no esté `skipped`.
+3. **Workflow → run.** Con `gh api .../actions/workflows` se ubica el workflow y sus runs; con `--run` se fija el run concreto; si no, se elige el más reciente cuyo `agent` no esté `skipped`.
 4. **Actions API.** Descarga run/jobs/timing/artifacts y calcula minutos (`ceil`) y costo nocional.
 5. **Inferencia (gh-aw).** Descarga el artefacto `usage`; lee `run_summary.json → token_usage_summary` (`total_aic`, tokens, `by_model`) y contrasta con `usage/agent/token_usage.jsonl` (`ai_credits_this_response`).
 6. **Conversión.** `aic_usd = aic × 0.01`; `estimated_total_cost_usd = notional + aic_usd`.
@@ -516,7 +516,7 @@ conservan en esta rama.
 
 El notebook de exploración previo (ya retirado de la rama) usaba `gh aw logs --run <id>`, **flag inexistente** en v0.86.2 → fallaba en silencio y guardaba `aic = 0.0` para **todos**. Ahora: AIC real cuando hay `usage`; `null` cuando no.
 
-### 10.4 Conclusión: qué podemos obtener realmente
+### 10.4 Conclusión: qué se puede obtener realmente
 
 Recordando el **objetivo de la investigación** (caracterizar los costos de gh-aw en
 repositorios públicos; RQ1–RQ5) y, en particular, **RQ5** —*"¿qué proporción del costo
