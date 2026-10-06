@@ -43,10 +43,9 @@ Ambos aparecen por separado en la factura y tienen **fuentes de datos distintas*
 - **`1 AIC = 0.01 USD`** es una **definición normativa** de gh-aw (AI Credits Spec sección 3.1), no un supuesto.
 - **Cada número tiene fuente**: Actions REST API, timing API, artefacto `usage` de gh-aw, precios oficiales de GitHub y `models.json`.
 - Hallazgo: en repos **públicos** GitHub **no cobra** Actions ⇒ hay que distinguir **costo facturado** (`actual`) de **precio de lista** (`notional`).
-- El código anterior tenía **errores de procedencia** (flag inexistente `gh aw logs --run`, costo inventado en públicos, redondeo prematuro). Fueron corregidos.
 - Hay **dos fuentes de AIC** que pueden diferir (`total_aic` canónico vs suma de registros); se guardan ambas para reconciliación.
 - El flujo es **reproducible desde el dataset `pavtch/GHAW-H`**: repositorio → workflow `.md` → `.lock.yml` → run → billing.
-- **Cobertura:** se puede estimar el costo en USD de **casi todos los runs** (incluso `failure`/`cancelled`, con jobs fallidos); lo que puede quedar `null` es, como máximo, la parte de **inferencia (AIC)**. Nunca se rellena con `0` ni con un valor inventado (ver la sección 10.4).
+- **Cobertura:** se puede estimar el costo en USD de **casi todos los runs** (incluso `failure`/`cancelled`, con jobs fallidos); lo que puede quedar `null` es, como máximo, la parte de **inferencia (AIC)**. Nunca se rellena con `0` ni con un valor inventado (ver la sección 10.3).
 
 ---
 
@@ -382,48 +381,36 @@ Fuente: <https://docs.github.com/en/billing/managing-billing-for-your-products/m
 
 Si no hay match → `runner_sku = null` y **no** se inventa tarifa.
 
-### 8.3 Del precio fijo del paper a las tarifas diferenciadas actuales
+### 8.3 Tarifas diferenciadas de Actions
 
-Los primeros avances (y el código previo `billing_data.ipynb`) usaban un **precio
-base único** tomado de **Bouzenia y Pradel (ICSE 2024)**, sección **3.2 "Metrics
-of Resource Usage"**, con precios de **marzo de 2023**:
+Las tarifas de GitHub Actions dependen del **SO, la arquitectura y el tamaño** del
+runner, por lo que **no** es válido asumir una tarifa base única. Como referencia, el
+trabajo de Bouzenia y Pradel (ICSE 2024, sección 3.2) emplea una tarifa fija por SO
+(precios de marzo de 2023) sobre una VM Linux estándar de 2 vCPU:
 
-```
-VM cost = ⌈t × f⌉ × 0.008        # t = minutos, f = factor por SO
-```
+| SO | Tarifa de referencia (2023) |
+| --- | --- |
+| Linux | $0.008 /min |
+| Windows | $0.016 /min |
+| macOS | $0.080 /min |
 
-La tarifa base ($0.008/min) correspondía a una VM Linux estándar de 2 CPUs,
-7 GB de RAM y 14 GB de disco. El estudio analiza runs de septiembre de 2020 a
-febrero de 2023.
+Ese modelo asume un catálogo **homogéneo** (máquinas x86 de 2 cores) y un multiplicador
+lineal por SO. Hoy las tarifas se diferencian por **SO, arquitectura y tamaño**:
 
-| SO | Factor `f` | Tarifa del paper (2023) |
+| Runner | Tarifa actual | Fuente |
 | --- | --- | --- |
-| Linux | 1 | $0.008 /min |
-| Windows | 2 | $0.016 /min |
-| macOS | 10 | $0.080 /min |
+| Linux 2-core x64 | **$0.006 /min** | GitHub billing |
+| Windows 2-core x64 | **$0.010 /min** | GitHub billing |
+| macOS | **$0.062 /min** | GitHub billing |
+| Linux ARM64 | **$0.005 /min** | GitHub billing |
+| Linux 1-core (`ubuntu-slim`) | **$0.002 /min** | GitHub billing |
 
-Ese modelo asumía un catálogo **homogéneo** (máquinas estándar x86 de 2 cores) y un
-multiplicador lineal por sistema operativo. **Ya no es válido**: hoy las tarifas
-de GitHub Actions se diferencian por **SO, arquitectura y tamaño**.
+Además, GitHub ofrece **larger runners** (4, 8, 16… vCPU, y opciones con GPU) cuyo
+costo por minuto escala según la capacidad solicitada.
 
-| Runner | Tarifa del paper (2023) | Tarifa actual | Fuente |
-| --- | --- | --- | --- |
-| Linux 2-core x64 | $0.008 /min | **$0.006 /min** | GitHub billing |
-| Windows 2-core x64 | $0.016 /min (`f=2`) | **$0.010 /min** | GitHub billing |
-| macOS | $0.080 /min (`f=10`) | **$0.062 /min** | GitHub billing |
-| Linux ARM64 | — | **$0.005 /min** | GitHub billing |
-| Windows ARM64 | — | **$0.010 /min** | GitHub billing |
-| Linux 1-core (`ubuntu-slim`) | — | **$0.002 /min** | GitHub billing |
-
-Además, GitHub incorporó **larger runners** (4, 8, 16… hasta 64/96 vCPU, y
-opciones con GPU) cuyo costo por minuto escala según la capacidad solicitada
-(aprox. desde ~$0.012/min para 4 vCPU hasta >$0.25/min en máquinas grandes). Es
-decir, tampoco existe un único "tipo de VM".
-
-**Consecuencia para el billing:** no se puede usar una constante `0.008` ni
-factores `1/2/10`. Por eso `extract_run_billing.py` mapea **explícitamente**
-`label del runner → SKU → tarifa` (sección 8.2), y deja `runner_sku = null`
-cuando no hay match en lugar de asumir un precio.
+**Consecuencia para el billing:** no se usa una constante `0.008` ni factores fijos.
+`extract_run_billing.py` mapea **explícitamente** `label del runner → SKU → tarifa`
+(sección 8.2) y deja `runner_sku = null` cuando no hay match, en lugar de asumir un precio.
 
 ---
 
@@ -509,18 +496,12 @@ Actions, en cambio, se obtiene igual aunque el run haya terminado en `failure`
 
 Regla general: si el job `agent` no se ejecuta (p. ej. el run falla en
 `activation`) o falta el artefacto `usage`/`token_usage_summary` (o expiró),
-entonces `aic = null`. Los runs de prueba usados durante la exploración no se
-conservan en esta rama.
+entonces `aic = null`.
 
-### 10.3 ¿Y antes?
+### 10.3 Conclusión: qué se puede obtener realmente
 
-El notebook de exploración previo (ya retirado de la rama) usaba `gh aw logs --run <id>`, **flag inexistente** en v0.86.2 → fallaba en silencio y guardaba `aic = 0.0` para **todos**. Ahora: AIC real cuando hay `usage`; `null` cuando no.
-
-### 10.4 Conclusión: qué se puede obtener realmente
-
-Recordando el **objetivo de la investigación** (caracterizar los costos de gh-aw en
-repositorios públicos; RQ1–RQ5) y, en particular, **RQ5** —*"¿qué proporción del costo
-corresponde a ejecuciones que no finalizan exitosamente?"*—, la cobertura real es:
+De acuerdo con las preguntas de investigación de este trabajo (RQ1–RQ3), la cobertura
+real de datos es:
 
 | Componente del costo | ¿Se puede estimar? | Cuándo falta |
 | --- | --- | --- |
@@ -544,20 +525,7 @@ En consecuencia:
 ---
 
 
-## 11. Errores corregidos del código anterior
-
-| Elemento anterior | Problema | Corrección |
-| --- | --- | --- |
-| `gh aw logs --run <id>` | flag **inexistente** → AIC siempre `0` | usar `--stdin` + `--artifacts usage` |
-| `compute_cost_usd` | cobraba en repos públicos | distinguir `notional` vs `actual` |
-| `round(..., 2/4)` | pérdida de precisión prematura | no redondear al guardar |
-| `missing_ai_data` | ocultaba "fallo + sin artefacto" | `null` = sin dato, `0` = consumo cero |
-| `paper_cost_usd` (`0.008`, factores 1/2/10) | fórmula de **Bouzenia y Pradel (ICSE 2024, sección 3.2)** con tarifas de 2023 ya **obsoletas** | mapeo explícito `label→SKU` con tarifas actuales (sección 8.3) |
-| `infer_runner()` por texto | heurística no trazable | mapeo explícito label→SKU |
-
----
-
-## 12. Precisión numérica
+## 11. Precisión numérica
 
 - Guardar **todos los decimales** de la fuente (p. ej. `1.0000000000000001e-07`).
 - **No** aplicar `round()` antes de guardar; el formato solo al mostrar.
@@ -566,7 +534,7 @@ En consecuencia:
 ---
 
 
-## 13. Referencias
+## 12. Referencias
 
 - gh-aw Billing: <https://github.github.com/gh-aw/reference/billing/>
 - AI Credits Specification: <https://github.github.com/gh-aw/specs/ai-credits-specification/>
@@ -574,5 +542,5 @@ En consecuencia:
 - Copilot models & pricing: <https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing>
 - GitHub Actions billing: <https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions>
 - Dataset GHAW-H: Valenzuela-Toledo, P., Kehrer, T., & Panichella, S. (2026). *GHAW-H: A Dataset of GitHub Agentic Workflow Histories* (v0.1.2). Zenodo. <https://huggingface.co/datasets/pavtch/GHAW-H>
-- Propuesta del proyecto (contexto): *¿Cuánto cuesta la automatización? Un estudio sobre la anatomía del costo de GitHub Agentic Workflows* (G. Caniupán y C. Ñanco, Universidad de La Frontera).
+- Trabajo del proyecto: *¿Cuánto cuesta la automatización? Un estudio sobre la anatomía del costo de GitHub Agentic Workflows* (G. Caniupán y C. Ñanco, Universidad de La Frontera).
 - Bouzenia, I., & Pradel, M. (2024). *Resource Usage and Optimization Opportunities in Workflows of GitHub Actions*. En 2024 IEEE/ACM 46th International Conference on Software Engineering (ICSE '24), 1–12. DOI: <https://doi.org/10.1145/3597503.3623303> · PDF: <https://software-lab.org/publications/icse2024_workflows.pdf>. Sección 3.2 y comparación en la sección 8.3.
