@@ -1,8 +1,8 @@
 # gaw_billing — Paquete de réplica (Etapa 2)
 
-Trabajo de **Billing** del proyecto **"Estudio Empírico de los Costos de Ejecución
-en GitHub Agentic Workflows"** (Gonzalo Caniupán y Camilo Ñanco, Universidad de
-La Frontera).
+Trabajo de **Billing** del proyecto **"¿Cuánto cuesta la automatización? Un estudio
+sobre la anatomía del costo de GitHub Agentic Workflows"** (Gonzalo Caniupán y Camilo
+Ñanco, Universidad de La Frontera).
 
 Este repositorio es el **instrumento de medición** y el **paquete de réplica** de la
 Etapa 2.

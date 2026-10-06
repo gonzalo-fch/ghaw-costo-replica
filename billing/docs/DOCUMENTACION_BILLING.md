@@ -574,5 +574,5 @@ En consecuencia:
 - Copilot models & pricing: <https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing>
 - GitHub Actions billing: <https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions>
 - Dataset GHAW-H: Valenzuela-Toledo, P., Kehrer, T., & Panichella, S. (2026). *GHAW-H: A Dataset of GitHub Agentic Workflow Histories* (v0.1.2). Zenodo. <https://huggingface.co/datasets/pavtch/GHAW-H>
-- Propuesta del proyecto (contexto): *Estudio Empírico de los Costos de Ejecución en GitHub Agentic Workflows* (G. Caniupán y C. Ñanco, Universidad de La Frontera).
+- Propuesta del proyecto (contexto): *¿Cuánto cuesta la automatización? Un estudio sobre la anatomía del costo de GitHub Agentic Workflows* (G. Caniupán y C. Ñanco, Universidad de La Frontera).
 - Bouzenia, I., & Pradel, M. (2024). *Resource Usage and Optimization Opportunities in Workflows of GitHub Actions*. En 2024 IEEE/ACM 46th International Conference on Software Engineering (ICSE '24), 1–12. DOI: <https://doi.org/10.1145/3597503.3623303> · PDF: <https://software-lab.org/publications/icse2024_workflows.pdf>. Sección 3.2 y comparación en la sección 8.3.
