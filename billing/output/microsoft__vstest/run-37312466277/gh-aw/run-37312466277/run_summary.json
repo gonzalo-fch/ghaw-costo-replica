@@ -1,0 +1,242 @@
+{
+  "cli_version": "v0.86.2",
+  "run_id": 37312466277,
+  "processed_at": "2026-10-05T17:29:22.150605974-03:00",
+  "run": {
+    "databaseId": 37312466277,
+    "number": 1571,
+    "url": "https://github.com/microsoft/vstest/actions/runs/37312466277",
+    "status": "completed",
+    "conclusion": "success",
+    "workflowName": "Issue Repro Triage \u0026 Auto-Fix 🔍",
+    "workflowPath": ".github/workflows/issue-repro-triage.lock.yml",
+    "createdAt": "2026-10-05T12:51:38Z",
+    "startedAt": "2026-10-05T12:51:38Z",
+    "updatedAt": "2026-10-05T12:59:12Z",
+    "event": "schedule",
+    "headBranch": "main",
+    "headSha": "05cd78191d1e42585744353e492f81dc3f2c2470",
+    "displayTitle": "Issue Repro Triage \u0026 Auto-Fix 🔍",
+    "Duration": 454000000000,
+    "ActionMinutes": 8,
+    "TokenUsage": 23892,
+    "Turns": 0,
+    "TurnsAvailable": true,
+    "ErrorCount": 0,
+    "WarningCount": 0,
+    "MissingToolCount": 0,
+    "MissingDataCount": 0,
+    "NoopCount": 0,
+    "EffectiveTokens": 0,
+    "AvgTimeBetweenTurns": 0,
+    "LogsPath": "billing/output/microsoft__vstest/run-37312466277/gh-aw/run-37312466277"
+  },
+  "metrics": {
+    "TokenUsage": 23892,
+    "EstimatedCost": 0,
+    "Turns": 0,
+    "ToolCalls": null,
+    "ToolSequences": null,
+    "AvgTimeBetweenTurns": 0,
+    "MaxTimeBetweenTurns": 0,
+    "MedianTimeBetweenTurns": 0,
+    "StdDevTimeBetweenTurns": 0
+  },
+  "task_domain": {
+    "name": "triage",
+    "label": "Triage",
+    "reason": "The run focused on classification, routing, or issue state updates."
+  },
+  "behavior_fingerprint": {
+    "execution_style": "directed",
+    "tool_breadth": "narrow",
+    "actuation_style": "read_only",
+    "resource_profile": "moderate",
+    "dispatch_mode": "standalone",
+    "agentic_fraction": 0
+  },
+  "agentic_assessments": [
+    {
+      "kind": "model_downgrade_available",
+      "severity": "low",
+      "summary": "This Triage run may not need a frontier model. A smaller model (e.g. gpt-4.1-mini, claude-haiku-4-5) could handle the task at lower cost.",
+      "evidence": "domain=triage resource_profile=moderate actuation=read_only",
+      "recommendation": "Try engine.model: gpt-4.1-mini or claude-haiku-4-5 in the workflow frontmatter."
+    }
+  ],
+  "access_analysis": null,
+  "firewall_analysis": {
+    "allowed_domains": [
+      "api.githubcopilot.com:443"
+    ],
+    "total_requests": 70,
+    "allowed_requests": 70,
+    "blocked_requests": 0,
+    "requests_by_domain": {
+      "api.githubcopilot.com:443": {
+        "allowed": 70,
+        "blocked": 0
+      }
+    }
+  },
+  "redacted_domains_analysis": null,
+  "missing_tools": null,
+  "missing_data": null,
+  "noops": null,
+  "mcp_failures": null,
+  "mcp_tool_usage": {
+    "summary": [],
+    "tool_calls": [],
+    "servers": [
+      {
+        "server_name": "github",
+        "request_count": 70,
+        "tool_call_count": 70,
+        "total_input_size": 0,
+        "total_output_size": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "request_count": 1,
+        "tool_call_count": 1,
+        "total_input_size": 0,
+        "total_output_size": 0
+      }
+    ]
+  },
+  "token_usage_summary": {
+    "total_input_tokens": 9391,
+    "total_output_tokens": 14501,
+    "total_cache_read_tokens": 1791879,
+    "total_cache_write_tokens": 109893,
+    "total_requests": 22,
+    "total_duration_ms": 190339,
+    "total_response_bytes": 508124,
+    "cache_efficiency": 0,
+    "total_aic": 77.81183,
+    "ambient_context": {
+      "input_tokens": 9349,
+      "cached_tokens": 0
+    },
+    "by_model": {
+      "claude-sonnet-5": {
+        "provider": "copilot",
+        "input_tokens": 9391,
+        "output_tokens": 14501,
+        "cache_read_tokens": 1791879,
+        "cache_write_tokens": 109893,
+        "requests": 22,
+        "duration_ms": 190339,
+        "response_bytes": 508124,
+        "aic": 77.81183
+      }
+    }
+  },
+  "github_rate_limit_usage": {
+    "total_requests_made": 23,
+    "core_consumed": 5,
+    "core_consumed_source": "response_headers_delta",
+    "core_remaining": 14994,
+    "core_limit": 15000,
+    "resources": [
+      {
+        "resource": "core",
+        "requests_made": 23,
+        "quota_consumed": 5,
+        "final_remaining": 14994,
+        "limit": 15000
+      }
+    ]
+  },
+  "artifacts_list": [
+    ".downloaded-artifacts/activation",
+    ".downloaded-artifacts/usage",
+    "aw-prompts/prompt-import-tree.json",
+    "aw-prompts/prompt-template.txt",
+    "aw-prompts/prompt.txt",
+    "aw_info.json",
+    "base/.github/ISSUE_TEMPLATE.md",
+    "base/.github/PULL_REQUEST_TEMPLATE.md",
+    "base/.github/agents/agentic-workflows.agent.md",
+    "base/.github/agents/build-failure-analyst.agent.md",
+    "base/.github/agents/expert-reviewer.md",
+    "base/.github/agents/md-link-checker.md",
+    "base/.github/agents/msbuild-reviewer.agent.md",
+    "base/.github/aw/actions-lock.json",
+    "base/.github/copilot/settings.json",
+    "base/.github/copilot-instructions.md",
+    "base/.github/dependabot.yml",
+    "base/.github/instructions/acceptance-tests.instructions.md",
+    "base/.github/instructions/blame-datacollector.instructions.md",
+    "base/.github/instructions/communicationutilities.instructions.md",
+    "base/.github/instructions/crossplatengine.instructions.md",
+    "base/.github/instructions/eng.instructions.md",
+    "base/.github/instructions/objectmodel.instructions.md",
+    "base/.github/instructions/testhost.instructions.md",
+    "base/.github/instructions/vstest-console.instructions.md",
+    "base/.github/policies/BreakingChangeManagement.yml",
+    "base/.github/policies/LabelManagement.IssueClosed.yml",
+    "base/.github/policies/LabelManagement.IssueOpened.yml",
+    "base/.github/policies/LabelManagement.IssueUpdated.yml",
+    "base/.github/policies/ScheduledSearch.AutoClose.yml",
+    "base/.github/policies/ScheduledSearch.MarkNoRecentActivity.yml",
+    "base/.github/release.yml",
+    "base/.github/skills/creating-skills/SKILL.md",
+    "base/.github/skills/expert-review/SKILL.md",
+    "base/.github/skills/trx-analysis/SKILL.md",
+    "base/.github/skills/validate-skills/SKILL.md",
+    "base/.github/skills/vstest-build-test/SKILL.md",
+    "base/.github/workflows/README.md",
+    "base/.github/workflows/agentic_commands.yml",
+    "base/.github/workflows/agentics-maintenance.yml",
+    "base/.github/workflows/build-failure-analysis-command.lock.yml",
+    "base/.github/workflows/build-failure-analysis-command.md",
+    "base/.github/workflows/build-failure-analysis.lock.yml",
+    "base/.github/workflows/build-failure-analysis.md",
+    "base/.github/workflows/code-simplifier.lock.yml",
+    "base/.github/workflows/code-simplifier.md",
+    "base/.github/workflows/copilot-setup-steps.yml",
+    "base/.github/workflows/daily-file-diet.lock.yml",
+    "base/.github/workflows/daily-file-diet.md",
+    "base/.github/workflows/efficiency-improver.lock.yml",
+    "base/.github/workflows/efficiency-improver.md",
+    "base/.github/workflows/http-link-check-probe.yml",
+    "base/.github/workflows/http-link-checker.lock.yml",
+    "base/.github/workflows/http-link-checker.md",
+    "base/.github/workflows/issue-repro-triage.lock.yml",
+    "base/.github/workflows/issue-repro-triage.md",
+    "base/.github/workflows/malicious-code-scan.lock.yml",
+    "base/.github/workflows/malicious-code-scan.md",
+    "base/.github/workflows/markdown-linter.lock.yml",
+    "base/.github/workflows/markdown-linter.md",
+    "base/.github/workflows/md-link-check-probe.yml",
+    "base/.github/workflows/md-link-checker.lock.yml",
+    "base/.github/workflows/md-link-checker.md",
+    "base/.github/workflows/msbuild-quality-review.lock.yml",
+    "base/.github/workflows/msbuild-quality-review.md",
+    "base/.github/workflows/pr-expert-reviewer.lock.yml",
+    "base/.github/workflows/pr-expert-reviewer.md",
+    "base/.github/workflows/pr-iteration.lock.yml",
+    "base/.github/workflows/pr-iteration.md",
+    "base/.github/workflows/repository-quality-improver.lock.yml",
+    "base/.github/workflows/repository-quality-improver.md",
+    "base/.github/workflows/scripts/check-http-links.sh",
+    "base/.github/workflows/scripts/check-md-links.py",
+    "base/.github/workflows/shared/build-failure-analysis-shared.md",
+    "base/.github/workflows/shared/formatting.md",
+    "base/.github/workflows/shared/msbuild-review-shared.md",
+    "base/.github/workflows/shared/repo-build-setup.md",
+    "base/.github/workflows/shared/reporting.md",
+    "base/AGENTS.md",
+    "github_rate_limits.jsonl",
+    "models.json",
+    "usage/activity/summary.json",
+    "usage/agent/execution.json",
+    "usage/agent/token_usage.jsonl",
+    "usage/agent_usage.json",
+    "usage/detection/execution.json",
+    "usage/detection/token_usage.jsonl",
+    "usage/github_rate_limits.jsonl"
+  ],
+  "job_details": null
+}

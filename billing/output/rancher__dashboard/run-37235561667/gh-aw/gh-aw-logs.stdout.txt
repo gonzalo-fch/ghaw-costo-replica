@@ -1,0 +1,129 @@
+{
+  "summary": {
+    "total_runs": 1,
+    "total_duration": "4.8m",
+    "total_aic": 20.58251,
+    "total_tokens": 8776,
+    "total_action_minutes": 5,
+    "total_turns": 0,
+    "total_errors": 0,
+    "total_warnings": 0,
+    "total_missing_tools": 0,
+    "total_missing_data": 0,
+    "total_safe_items": 0,
+    "total_driver_exit_failures": 0,
+    "total_agent_logic_failures": 0,
+    "total_episodes": 1,
+    "high_confidence_episodes": 1,
+    "total_github_api_calls": 10,
+    "engine_counts": {
+      "copilot": 1
+    }
+  },
+  "runs": [
+    {
+      "run_id": 37235561667,
+      "number": 208,
+      "workflow_name": "Daily Issue Grooming",
+      "workflow_path": ".github/workflows/daily-issue-grooming.lock.yml",
+      "agent": "copilot",
+      "engine": "GitHub Copilot CLI",
+      "engine_id": "copilot",
+      "status": "completed",
+      "conclusion": "success",
+      "classification": "baseline",
+      "duration": "4.8m",
+      "action_minutes": 5,
+      "token_usage": 8776,
+      "aic": 20.58251,
+      "created_at": "2026-10-04T21:18:29Z",
+      "started_at": "2026-10-04T21:18:29Z",
+      "updated_at": "2026-10-04T21:23:17Z",
+      "url": "https://github.com/rancher/dashboard/actions/runs/37235561667",
+      "logs_path": "billing/output/rancher__dashboard/run-37235561667/gh-aw/run-37235561667",
+      "event": "schedule",
+      "branch": "master",
+      "head_sha": "3ee32042924d1caf841e1acab355ecd970294f91",
+      "display_title": "Daily Issue Grooming",
+      "repository": "rancher/dashboard",
+      "organization": "rancher",
+      "ref": "refs/heads/master",
+      "sha": "3ee32042924d1caf841e1acab355ecd970294f91",
+      "actor": "marcelofukumoto",
+      "run_attempt": "1",
+      "event_name": "schedule",
+      "github_api_calls": 10
+    }
+  ],
+  "episodes": [],
+  "edges": [],
+  "mcp_tool_usage": {
+    "summary": null,
+    "servers": [
+      {
+        "server_name": "github",
+        "request_count": 89,
+        "tool_call_count": 89,
+        "total_input_size": 0,
+        "total_output_size": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "request_count": 1,
+        "tool_call_count": 1,
+        "total_input_size": 0,
+        "total_output_size": 0
+      }
+    ],
+    "tool_calls": null
+  },
+  "observability_insights": [
+    {
+      "category": "actuation",
+      "severity": "info",
+      "title": "Actuation mix summarized",
+      "summary": "Across 1 run(s), 0 executed write-capable safe outputs and 1 stayed read-only.",
+      "evidence": "write_runs=0 read_only_runs=1"
+    },
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Cross-run log template patterns",
+      "summary": "Mined 1 distinct event templates across 6 pipeline stages from 1 events in 1 runs.",
+      "evidence": "finish=1"
+    }
+  ],
+  "firewall_log": {
+    "total_requests": 28,
+    "allowed_requests": 28,
+    "blocked_requests": 0,
+    "allowed_domains": [
+      "api.githubcopilot.com:443"
+    ],
+    "blocked_domains": null,
+    "requests_by_domain": {
+      "api.githubcopilot.com:443": {
+        "allowed": 28,
+        "blocked": 0
+      }
+    },
+    "by_workflow": {
+      "Daily Issue Grooming": {
+        "allowed_domains": [
+          "api.githubcopilot.com:443"
+        ],
+        "total_requests": 28,
+        "allowed_requests": 28,
+        "blocked_requests": 0,
+        "requests_by_domain": {
+          "api.githubcopilot.com:443": {
+            "allowed": 28,
+            "blocked": 0
+          }
+        }
+      }
+    }
+  },
+  "logs_location": "/home/gonzalo/Escritorio/Proyectos/gaw_billing/billing/output/rancher__dashboard/run-37235561667/gh-aw",
+  "message": "Only the usage artifact was downloaded. Use --artifacts all to download all artifacts, or a specific set such as --artifacts agent, or combinations such as --artifacts agent,firewall."
+}

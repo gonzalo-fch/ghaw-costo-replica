@@ -1,0 +1,195 @@
+{
+  "summary": {
+    "total_runs": 1,
+    "total_duration": "7.2m",
+    "total_aic": 45.167880000000004,
+    "total_tokens": 18592,
+    "total_action_minutes": 8,
+    "total_turns": 0,
+    "total_errors": 0,
+    "total_warnings": 0,
+    "total_missing_tools": 0,
+    "total_missing_data": 0,
+    "total_safe_items": 1,
+    "total_driver_exit_failures": 0,
+    "total_agent_logic_failures": 0,
+    "total_episodes": 1,
+    "high_confidence_episodes": 1,
+    "total_github_api_calls": 35,
+    "engine_counts": {
+      "claude": 1
+    }
+  },
+  "runs": [
+    {
+      "run_id": 36728232182,
+      "number": 124,
+      "workflow_name": "Documentation Bot",
+      "workflow_path": ".github/workflows/doc-bot.lock.yml",
+      "agent": "claude",
+      "engine": "Claude Code",
+      "engine_id": "claude",
+      "status": "completed",
+      "conclusion": "success",
+      "classification": "baseline",
+      "duration": "7.2m",
+      "action_minutes": 8,
+      "token_usage": 18592,
+      "aic": 45.167880000000004,
+      "ambient_context": {
+        "input_tokens": 11693,
+        "cached_tokens": 0
+      },
+      "safe_items_count": 1,
+      "created_at": "2026-09-30T14:19:22Z",
+      "started_at": "2026-09-30T14:19:22Z",
+      "updated_at": "2026-09-30T14:26:35Z",
+      "url": "https://github.com/vaadin/flow/actions/runs/36728232182",
+      "logs_path": "billing/output/vaadin__flow/run-36728232182/gh-aw/run-36728232182",
+      "event": "pull_request_target",
+      "branch": "fix/quarkus-native-interface-implementations",
+      "head_sha": "56ab43d9259fbffde908c0f4ad3607c848503974",
+      "display_title": "Documentation Bot",
+      "repository": "vaadin/flow",
+      "organization": "vaadin",
+      "ref": "refs/heads/main",
+      "sha": "83340afe956e311dbe78b779dfb0bc2baa0a63dd",
+      "actor": "platosha",
+      "run_attempt": "1",
+      "event_name": "pull_request_target",
+      "comparison": {
+        "baseline_found": false
+      },
+      "task_domain": {
+        "name": "general_automation",
+        "label": "General Automation",
+        "reason": "The run does not strongly match a narrower workflow domain yet."
+      },
+      "behavior_fingerprint": {
+        "execution_style": "directed",
+        "tool_breadth": "narrow",
+        "actuation_style": "selective_write",
+        "resource_profile": "moderate",
+        "dispatch_mode": "standalone",
+        "agentic_fraction": 0
+      },
+      "token_usage_summary": {
+        "total_input_tokens": 11719,
+        "total_output_tokens": 6873,
+        "total_cache_read_tokens": 886469,
+        "total_cache_write_tokens": 82262,
+        "total_requests": 14,
+        "total_duration_ms": 94275,
+        "total_response_bytes": 42567,
+        "cache_efficiency": 0,
+        "total_aic": 45.167880000000004,
+        "ambient_context": {
+          "input_tokens": 11693,
+          "cached_tokens": 0
+        },
+        "by_model": {
+          "claude-sonnet-5": {
+            "provider": "anthropic",
+            "input_tokens": 11719,
+            "output_tokens": 6873,
+            "cache_read_tokens": 886469,
+            "cache_write_tokens": 82262,
+            "requests": 14,
+            "duration_ms": 94275,
+            "response_bytes": 42567,
+            "aic": 45.167880000000004
+          }
+        }
+      },
+      "github_api_calls": 35
+    }
+  ],
+  "episodes": [
+    {
+      "episode_id": "standalone:36728232182",
+      "kind": "standalone",
+      "confidence": "high",
+      "reasons": [
+        "no_shared_lineage_markers"
+      ],
+      "root_run_id": 36728232182,
+      "run_ids": [
+        36728232182
+      ],
+      "workflow_names": [
+        "Documentation Bot"
+      ],
+      "primary_workflow": "Documentation Bot",
+      "total_runs": 1,
+      "total_tokens": 18592,
+      "total_aic": 45.167880000000004,
+      "total_duration": "7.2m",
+      "risky_node_count": 0,
+      "changed_node_count": 0,
+      "write_capable_node_count": 1,
+      "missing_tool_count": 0,
+      "mcp_failure_count": 0,
+      "blocked_request_count": 0,
+      "latest_success_fallback_count": 0,
+      "new_mcp_failure_run_count": 0,
+      "blocked_request_increase_run_count": 0,
+      "resource_heavy_node_count": 0,
+      "poor_control_node_count": 0,
+      "risk_distribution": "none",
+      "escalation_eligible": false,
+      "suggested_route": "workflow:Documentation Bot",
+      "repository": "vaadin/flow",
+      "organization": "vaadin"
+    }
+  ],
+  "edges": [],
+  "observability_insights": [
+    {
+      "category": "actuation",
+      "severity": "info",
+      "title": "Actuation mix summarized",
+      "summary": "Across 1 run(s), 1 executed write-capable safe outputs and 0 stayed read-only.",
+      "evidence": "write_runs=1 read_only_runs=0"
+    },
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Cross-run log template patterns",
+      "summary": "Mined 1 distinct event templates across 6 pipeline stages from 1 events in 1 runs.",
+      "evidence": "finish=1"
+    }
+  ],
+  "firewall_log": {
+    "total_requests": 34,
+    "allowed_requests": 34,
+    "blocked_requests": 0,
+    "allowed_domains": [
+      "api.anthropic.com:443"
+    ],
+    "blocked_domains": null,
+    "requests_by_domain": {
+      "api.anthropic.com:443": {
+        "allowed": 34,
+        "blocked": 0
+      }
+    },
+    "by_workflow": {
+      "Documentation Bot": {
+        "allowed_domains": [
+          "api.anthropic.com:443"
+        ],
+        "total_requests": 34,
+        "allowed_requests": 34,
+        "blocked_requests": 0,
+        "requests_by_domain": {
+          "api.anthropic.com:443": {
+            "allowed": 34,
+            "blocked": 0
+          }
+        }
+      }
+    }
+  },
+  "logs_location": "/home/gonzalo/Escritorio/Proyectos/gaw_billing/billing/output/vaadin__flow/run-36728232182/gh-aw",
+  "message": "Only the usage artifact was downloaded. Use --artifacts all to download all artifacts, or a specific set such as --artifacts agent, or combinations such as --artifacts agent,firewall."
+}

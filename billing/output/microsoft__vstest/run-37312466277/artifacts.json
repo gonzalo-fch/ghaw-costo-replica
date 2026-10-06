@@ -1,0 +1,185 @@
+{
+  "total_count": 9,
+  "artifacts": [
+    {
+      "id": 11347000048,
+      "node_id": "MDg6QXJ0aWZhY3QxMTM0NzAwMDA0OA==",
+      "name": "safe-outputs-items",
+      "size_in_bytes": 301,
+      "url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11347000048",
+      "archive_download_url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11347000048/zip",
+      "expired": false,
+      "digest": "sha256:ff03fe0ef67c349eefbc7760eaad5dcc5fe3bf8fea8fcef69f1ac4f05211d09b",
+      "created_at": "2026-10-05T12:58:33Z",
+      "updated_at": "2026-10-05T12:58:33Z",
+      "expires_at": "2027-01-03T12:51:39Z",
+      "workflow_run": {
+        "id": 37312466277,
+        "repository_id": 62774726,
+        "head_repository_id": 62774726,
+        "head_branch": "main",
+        "head_sha": "05cd78191d1e42585744353e492f81dc3f2c2470"
+      }
+    },
+    {
+      "id": 11346743138,
+      "node_id": "MDg6QXJ0aWZhY3QxMTM0Njc0MzEzOA==",
+      "name": "detection",
+      "size_in_bytes": 22557,
+      "url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11346743138",
+      "archive_download_url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11346743138/zip",
+      "expired": false,
+      "digest": "sha256:6f519e61c9c3dc595f8c58b19285a35a1b4aafcaa9d2e09af4b624e972ffe18b",
+      "created_at": "2026-10-05T12:58:12Z",
+      "updated_at": "2026-10-05T12:58:12Z",
+      "expires_at": "2027-01-03T12:51:39Z",
+      "workflow_run": {
+        "id": 37312466277,
+        "repository_id": 62774726,
+        "head_repository_id": 62774726,
+        "head_branch": "main",
+        "head_sha": "05cd78191d1e42585744353e492f81dc3f2c2470"
+      }
+    },
+    {
+      "id": 11346487227,
+      "node_id": "MDg6QXJ0aWZhY3QxMTM0NjQ4NzIyNw==",
+      "name": "aic-usage-scan-v2",
+      "size_in_bytes": 396,
+      "url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11346487227",
+      "archive_download_url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11346487227/zip",
+      "expired": false,
+      "digest": "sha256:c726fd1714817f4a7ebe2161995a259462e5ef2cbea3903e350c43a63d7a593b",
+      "created_at": "2026-10-05T12:52:01Z",
+      "updated_at": "2026-10-05T12:52:01Z",
+      "expires_at": "2026-10-08T12:52:01Z",
+      "workflow_run": {
+        "id": 37312466277,
+        "repository_id": 62774726,
+        "head_repository_id": 62774726,
+        "head_branch": "main",
+        "head_sha": "05cd78191d1e42585744353e492f81dc3f2c2470"
+      }
+    },
+    {
+      "id": 11346259220,
+      "node_id": "MDg6QXJ0aWZhY3QxMTM0NjI1OTIyMA==",
+      "name": "usage",
+      "size_in_bytes": 6345,
+      "url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11346259220",
+      "archive_download_url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11346259220/zip",
+      "expired": false,
+      "digest": "sha256:2d782559c6448d2eff00fac6b8fabb8bf858abce6baf47c142138a01324985f8",
+      "created_at": "2026-10-05T12:59:05Z",
+      "updated_at": "2026-10-05T12:59:05Z",
+      "expires_at": "2027-01-03T12:51:39Z",
+      "workflow_run": {
+        "id": 37312466277,
+        "repository_id": 62774726,
+        "head_repository_id": 62774726,
+        "head_branch": "main",
+        "head_sha": "05cd78191d1e42585744353e492f81dc3f2c2470"
+      }
+    },
+    {
+      "id": 11346073768,
+      "node_id": "MDg6QXJ0aWZhY3QxMTM0NjA3Mzc2OA==",
+      "name": "info",
+      "size_in_bytes": 605,
+      "url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11346073768",
+      "archive_download_url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11346073768/zip",
+      "expired": false,
+      "digest": "sha256:a5f5df95b3a996f06dc8087471cda129134a35f6d11aa5d62c25f86b37e11e7c",
+      "created_at": "2026-10-05T12:52:06Z",
+      "updated_at": "2026-10-05T12:52:06Z",
+      "expires_at": "2027-01-03T12:51:39Z",
+      "workflow_run": {
+        "id": 37312466277,
+        "repository_id": 62774726,
+        "head_repository_id": 62774726,
+        "head_branch": "main",
+        "head_sha": "05cd78191d1e42585744353e492f81dc3f2c2470"
+      }
+    },
+    {
+      "id": 11345859195,
+      "node_id": "MDg6QXJ0aWZhY3QxMTM0NTg1OTE5NQ==",
+      "name": "cache-memory",
+      "size_in_bytes": 31272,
+      "url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11345859195",
+      "archive_download_url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11345859195/zip",
+      "expired": false,
+      "digest": "sha256:a36f69d3ddbad1d51fa6403f71d367648d030769e41f58c3d1e677093384b6ee",
+      "created_at": "2026-10-05T12:56:55Z",
+      "updated_at": "2026-10-05T12:56:55Z",
+      "expires_at": "2027-01-03T12:51:39Z",
+      "workflow_run": {
+        "id": 37312466277,
+        "repository_id": 62774726,
+        "head_repository_id": 62774726,
+        "head_branch": "main",
+        "head_sha": "05cd78191d1e42585744353e492f81dc3f2c2470"
+      }
+    },
+    {
+      "id": 11345809266,
+      "node_id": "MDg6QXJ0aWZhY3QxMTM0NTgwOTI2Ng==",
+      "name": "agent-output-fallback",
+      "size_in_bytes": 4325,
+      "url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11345809266",
+      "archive_download_url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11345809266/zip",
+      "expired": false,
+      "digest": "sha256:c2c12174919d2d4f79c0143bcba5808409e070ded39492d0c563e039775f534a",
+      "created_at": "2026-10-05T12:56:56Z",
+      "updated_at": "2026-10-05T12:56:56Z",
+      "expires_at": "2027-01-03T12:51:39Z",
+      "workflow_run": {
+        "id": 37312466277,
+        "repository_id": 62774726,
+        "head_repository_id": 62774726,
+        "head_branch": "main",
+        "head_sha": "05cd78191d1e42585744353e492f81dc3f2c2470"
+      }
+    },
+    {
+      "id": 11345703613,
+      "node_id": "MDg6QXJ0aWZhY3QxMTM0NTcwMzYxMw==",
+      "name": "activation",
+      "size_in_bytes": 548087,
+      "url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11345703613",
+      "archive_download_url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11345703613/zip",
+      "expired": false,
+      "digest": "sha256:a07f6c4d01a94fdb170edc5885e2d50b5fd34bbe18dac254b75743498719beb5",
+      "created_at": "2026-10-05T12:52:07Z",
+      "updated_at": "2026-10-05T12:52:07Z",
+      "expires_at": "2026-10-06T12:52:06Z",
+      "workflow_run": {
+        "id": 37312466277,
+        "repository_id": 62774726,
+        "head_repository_id": 62774726,
+        "head_branch": "main",
+        "head_sha": "05cd78191d1e42585744353e492f81dc3f2c2470"
+      }
+    },
+    {
+      "id": 11345529667,
+      "node_id": "MDg6QXJ0aWZhY3QxMTM0NTUyOTY2Nw==",
+      "name": "agent",
+      "size_in_bytes": 1568005,
+      "url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11345529667",
+      "archive_download_url": "https://api.github.com/repos/microsoft/vstest/actions/artifacts/11345529667/zip",
+      "expired": false,
+      "digest": "sha256:071d8341ad28c8ee835c7e2acc01cb4df1f0b144ecdbe0ec4ea3d7ca6cc0c631",
+      "created_at": "2026-10-05T12:56:58Z",
+      "updated_at": "2026-10-05T12:56:58Z",
+      "expires_at": "2027-01-03T12:51:39Z",
+      "workflow_run": {
+        "id": 37312466277,
+        "repository_id": 62774726,
+        "head_repository_id": 62774726,
+        "head_branch": "main",
+        "head_sha": "05cd78191d1e42585744353e492f81dc3f2c2470"
+      }
+    }
+  ]
+}

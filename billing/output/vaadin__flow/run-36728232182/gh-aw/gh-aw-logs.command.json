@@ -1,0 +1,17 @@
+{
+  "args": [
+    "gh",
+    "aw",
+    "logs",
+    "--stdin",
+    "--repo",
+    "vaadin/flow",
+    "--json",
+    "--output",
+    "billing/output/vaadin__flow/run-36728232182/gh-aw",
+    "--artifacts",
+    "usage"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 2.416207835000023
+}

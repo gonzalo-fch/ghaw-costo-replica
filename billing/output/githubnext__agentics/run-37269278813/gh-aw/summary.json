@@ -1,0 +1,235 @@
+{
+  "summary": {
+    "total_runs": 1,
+    "total_duration": "8.2m",
+    "total_aic": 68.06513999999999,
+    "total_tokens": 17846,
+    "total_action_minutes": 9,
+    "total_turns": 0,
+    "total_errors": 0,
+    "total_warnings": 0,
+    "total_missing_tools": 0,
+    "total_missing_data": 0,
+    "total_safe_items": 1,
+    "total_driver_exit_failures": 0,
+    "total_agent_logic_failures": 0,
+    "total_episodes": 1,
+    "high_confidence_episodes": 1,
+    "total_github_api_calls": 10,
+    "engine_counts": {
+      "copilot": 1
+    }
+  },
+  "runs": [
+    {
+      "run_id": 37269278813,
+      "number": 170,
+      "workflow_name": "Daily Link Checker \u0026 Fixer",
+      "workflow_path": ".github/workflows/link-checker.lock.yml",
+      "agent": "copilot",
+      "engine": "GitHub Copilot CLI",
+      "engine_id": "copilot",
+      "status": "completed",
+      "conclusion": "success",
+      "classification": "baseline",
+      "duration": "8.2m",
+      "action_minutes": 9,
+      "token_usage": 17846,
+      "aic": 68.06513999999999,
+      "ambient_context": {
+        "input_tokens": 5908,
+        "cached_tokens": 0
+      },
+      "safe_items_count": 1,
+      "created_at": "2026-10-05T05:46:36Z",
+      "started_at": "2026-10-05T05:46:36Z",
+      "updated_at": "2026-10-05T05:54:46Z",
+      "url": "https://github.com/githubnext/agentics/actions/runs/37269278813",
+      "logs_path": "billing/output/githubnext__agentics/run-37269278813/gh-aw/run-37269278813",
+      "event": "schedule",
+      "branch": "main",
+      "head_sha": "5d11aa2a05ce2c943c085acb7b12b583f83ed375",
+      "display_title": "Daily Link Checker \u0026 Fixer",
+      "repository": "githubnext/agentics",
+      "organization": "githubnext",
+      "ref": "refs/heads/main",
+      "sha": "5d11aa2a05ce2c943c085acb7b12b583f83ed375",
+      "actor": "dsyme",
+      "run_attempt": "1",
+      "event_name": "schedule",
+      "comparison": {
+        "baseline_found": false
+      },
+      "task_domain": {
+        "name": "code_fix",
+        "label": "Code Fix",
+        "reason": "The workflow appears oriented toward code changes or pull request review."
+      },
+      "behavior_fingerprint": {
+        "execution_style": "directed",
+        "tool_breadth": "narrow",
+        "actuation_style": "selective_write",
+        "resource_profile": "moderate",
+        "dispatch_mode": "standalone",
+        "agentic_fraction": 0
+      },
+      "token_usage_summary": {
+        "total_input_tokens": 5970,
+        "total_output_tokens": 11876,
+        "total_cache_read_tokens": 1846557,
+        "total_cache_write_tokens": 77032,
+        "total_requests": 32,
+        "total_duration_ms": 158820,
+        "total_response_bytes": 552437,
+        "cache_efficiency": 0,
+        "total_aic": 68.06513999999999,
+        "ambient_context": {
+          "input_tokens": 5908,
+          "cached_tokens": 0
+        },
+        "by_model": {
+          "claude-sonnet-5": {
+            "provider": "copilot",
+            "input_tokens": 5970,
+            "output_tokens": 11876,
+            "cache_read_tokens": 1846557,
+            "cache_write_tokens": 77032,
+            "requests": 32,
+            "duration_ms": 158820,
+            "response_bytes": 552437,
+            "aic": 68.06513999999999
+          }
+        }
+      },
+      "github_api_calls": 10
+    }
+  ],
+  "episodes": [
+    {
+      "episode_id": "standalone:37269278813",
+      "kind": "standalone",
+      "confidence": "high",
+      "reasons": [
+        "no_shared_lineage_markers"
+      ],
+      "root_run_id": 37269278813,
+      "run_ids": [
+        37269278813
+      ],
+      "workflow_names": [
+        "Daily Link Checker \u0026 Fixer"
+      ],
+      "primary_workflow": "Daily Link Checker \u0026 Fixer",
+      "total_runs": 1,
+      "total_tokens": 17846,
+      "total_aic": 68.06513999999999,
+      "total_duration": "8.2m",
+      "risky_node_count": 0,
+      "changed_node_count": 0,
+      "write_capable_node_count": 1,
+      "missing_tool_count": 0,
+      "mcp_failure_count": 0,
+      "blocked_request_count": 5,
+      "latest_success_fallback_count": 0,
+      "new_mcp_failure_run_count": 0,
+      "blocked_request_increase_run_count": 0,
+      "resource_heavy_node_count": 0,
+      "poor_control_node_count": 0,
+      "risk_distribution": "none",
+      "escalation_eligible": false,
+      "suggested_route": "workflow:Daily Link Checker \u0026 Fixer",
+      "repository": "githubnext/agentics",
+      "organization": "githubnext"
+    }
+  ],
+  "edges": [],
+  "mcp_tool_usage": {
+    "summary": null,
+    "servers": [
+      {
+        "server_name": "github",
+        "request_count": 9,
+        "tool_call_count": 9,
+        "total_input_size": 0,
+        "total_output_size": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "request_count": 1,
+        "tool_call_count": 1,
+        "total_input_size": 0,
+        "total_output_size": 0
+      }
+    ],
+    "tool_calls": null
+  },
+  "observability_insights": [
+    {
+      "category": "network",
+      "severity": "medium",
+      "title": "Network friction hotspot identified",
+      "summary": "Workflow link-checker had the highest firewall block pressure with 5 blocked request(s) out of 92 total (5%).",
+      "evidence": "workflow=link-checker blocked=5 total=92"
+    },
+    {
+      "category": "actuation",
+      "severity": "info",
+      "title": "Actuation mix summarized",
+      "summary": "Across 1 run(s), 1 executed write-capable safe outputs and 0 stayed read-only.",
+      "evidence": "write_runs=1 read_only_runs=0"
+    },
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Cross-run log template patterns",
+      "summary": "Mined 1 distinct event templates across 6 pipeline stages from 1 events in 1 runs.",
+      "evidence": "finish=1"
+    }
+  ],
+  "firewall_log": {
+    "total_requests": 92,
+    "allowed_requests": 87,
+    "blocked_requests": 5,
+    "allowed_domains": [
+      "api.githubcopilot.com:443"
+    ],
+    "blocked_domains": [
+      "github.github.io:443"
+    ],
+    "requests_by_domain": {
+      "api.githubcopilot.com:443": {
+        "allowed": 87,
+        "blocked": 0
+      },
+      "github.github.io:443": {
+        "allowed": 0,
+        "blocked": 5
+      }
+    },
+    "by_workflow": {
+      "Daily Link Checker \u0026 Fixer": {
+        "allowed_domains": [
+          "api.githubcopilot.com:443"
+        ],
+        "blocked_domains": [
+          "github.github.io:443"
+        ],
+        "total_requests": 92,
+        "allowed_requests": 87,
+        "blocked_requests": 5,
+        "requests_by_domain": {
+          "api.githubcopilot.com:443": {
+            "allowed": 87,
+            "blocked": 0
+          },
+          "github.github.io:443": {
+            "allowed": 0,
+            "blocked": 5
+          }
+        }
+      }
+    }
+  },
+  "logs_location": "/home/gonzalo/Escritorio/Proyectos/gaw_billing/billing/output/githubnext__agentics/run-37269278813/gh-aw",
+  "message": "Only the usage artifact was downloaded. Use --artifacts all to download all artifacts, or a specific set such as --artifacts agent, or combinations such as --artifacts agent,firewall."
+}

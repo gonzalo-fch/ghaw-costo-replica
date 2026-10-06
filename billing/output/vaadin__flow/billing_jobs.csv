@@ -1,0 +1,7 @@
+run_id,job_id,job_name,status,conclusion,started_at,completed_at,duration_seconds,runner_name,runner_labels_raw,runner_label_matched,runner_sku,rate_usd_per_min,ceil_minutes,actions_cost_usd_notional
+36728232182,109930589280,pre_activation,completed,success,2026-09-30T14:19:37Z,2026-09-30T14:19:46Z,9.0,GitHub Actions 1000733962,"[""ubuntu-slim""]",ubuntu-slim,actions_linux_slim,0.002,1,0.002
+36728232182,109930756880,activation,completed,success,2026-09-30T14:19:51Z,2026-09-30T14:20:20Z,29.0,GitHub Actions 1000733966,"[""ubuntu-slim""]",ubuntu-slim,actions_linux_slim,0.002,1,0.002
+36728232182,109931003814,agent,completed,success,2026-09-30T14:21:37Z,2026-09-30T14:24:44Z,187.0,GitHub Actions 1000733991,"[""ubuntu-latest""]",ubuntu-latest,actions_linux,0.006,4,0.024
+36728232182,109932949662,detection,completed,success,2026-09-30T14:24:47Z,2026-09-30T14:25:46Z,59.0,GitHub Actions 1000734001,"[""ubuntu-latest""]",ubuntu-latest,actions_linux,0.006,1,0.006
+36728232182,109933407789,safe_outputs,completed,success,2026-09-30T14:25:51Z,2026-09-30T14:26:15Z,24.0,GitHub Actions 1000734002,"[""ubuntu-slim""]",ubuntu-slim,actions_linux_slim,0.002,1,0.002
+36728232182,109933625084,conclusion,completed,success,2026-09-30T14:26:19Z,2026-09-30T14:26:33Z,14.0,GitHub Actions 1000734011,"[""ubuntu-slim""]",ubuntu-slim,actions_linux_slim,0.002,1,0.002

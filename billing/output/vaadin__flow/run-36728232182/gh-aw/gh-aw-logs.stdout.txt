@@ -1,0 +1,110 @@
+{
+  "summary": {
+    "total_runs": 1,
+    "total_duration": "7.2m",
+    "total_aic": 45.167880000000004,
+    "total_tokens": 18592,
+    "total_action_minutes": 8,
+    "total_turns": 0,
+    "total_errors": 0,
+    "total_warnings": 0,
+    "total_missing_tools": 0,
+    "total_missing_data": 0,
+    "total_safe_items": 1,
+    "total_driver_exit_failures": 0,
+    "total_agent_logic_failures": 0,
+    "total_episodes": 1,
+    "high_confidence_episodes": 1,
+    "total_github_api_calls": 35,
+    "engine_counts": {
+      "claude": 1
+    }
+  },
+  "runs": [
+    {
+      "run_id": 36728232182,
+      "number": 124,
+      "workflow_name": "Documentation Bot",
+      "workflow_path": ".github/workflows/doc-bot.lock.yml",
+      "agent": "claude",
+      "engine": "Claude Code",
+      "engine_id": "claude",
+      "status": "completed",
+      "conclusion": "success",
+      "classification": "baseline",
+      "duration": "7.2m",
+      "action_minutes": 8,
+      "token_usage": 18592,
+      "aic": 45.167880000000004,
+      "safe_items_count": 1,
+      "created_at": "2026-09-30T14:19:22Z",
+      "started_at": "2026-09-30T14:19:22Z",
+      "updated_at": "2026-09-30T14:26:35Z",
+      "url": "https://github.com/vaadin/flow/actions/runs/36728232182",
+      "logs_path": "billing/output/vaadin__flow/run-36728232182/gh-aw/run-36728232182",
+      "event": "pull_request_target",
+      "branch": "fix/quarkus-native-interface-implementations",
+      "head_sha": "56ab43d9259fbffde908c0f4ad3607c848503974",
+      "display_title": "Documentation Bot",
+      "repository": "vaadin/flow",
+      "organization": "vaadin",
+      "ref": "refs/heads/main",
+      "sha": "83340afe956e311dbe78b779dfb0bc2baa0a63dd",
+      "actor": "platosha",
+      "run_attempt": "1",
+      "event_name": "pull_request_target",
+      "github_api_calls": 35
+    }
+  ],
+  "episodes": [],
+  "edges": [],
+  "observability_insights": [
+    {
+      "category": "actuation",
+      "severity": "info",
+      "title": "Actuation mix summarized",
+      "summary": "Across 1 run(s), 1 executed write-capable safe outputs and 0 stayed read-only.",
+      "evidence": "write_runs=1 read_only_runs=0"
+    },
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Cross-run log template patterns",
+      "summary": "Mined 1 distinct event templates across 6 pipeline stages from 1 events in 1 runs.",
+      "evidence": "finish=1"
+    }
+  ],
+  "firewall_log": {
+    "total_requests": 34,
+    "allowed_requests": 34,
+    "blocked_requests": 0,
+    "allowed_domains": [
+      "api.anthropic.com:443"
+    ],
+    "blocked_domains": null,
+    "requests_by_domain": {
+      "api.anthropic.com:443": {
+        "allowed": 34,
+        "blocked": 0
+      }
+    },
+    "by_workflow": {
+      "Documentation Bot": {
+        "allowed_domains": [
+          "api.anthropic.com:443"
+        ],
+        "total_requests": 34,
+        "allowed_requests": 34,
+        "blocked_requests": 0,
+        "requests_by_domain": {
+          "api.anthropic.com:443": {
+            "allowed": 34,
+            "blocked": 0
+          }
+        }
+      }
+    }
+  },
+  "logs_location": "/home/gonzalo/Escritorio/Proyectos/gaw_billing/billing/output/vaadin__flow/run-36728232182/gh-aw",
+  "message": "Only the usage artifact was downloaded. Use --artifacts all to download all artifacts, or a specific set such as --artifacts agent, or combinations such as --artifacts agent,firewall."
+}

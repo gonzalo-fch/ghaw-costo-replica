@@ -1,0 +1,165 @@
+{
+  "total_count": 8,
+  "artifacts": [
+    {
+      "id": 11328305556,
+      "node_id": "MDg6QXJ0aWZhY3QxMTMyODMwNTU1Ng==",
+      "name": "agent-output-fallback",
+      "size_in_bytes": 2278,
+      "url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11328305556",
+      "archive_download_url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11328305556/zip",
+      "expired": false,
+      "digest": "sha256:ce934d9ce9589be3b3980488829ccd96972cc86eea273340618586acbeecf413",
+      "created_at": "2026-10-05T05:52:15Z",
+      "updated_at": "2026-10-05T05:52:15Z",
+      "expires_at": "2027-01-03T05:46:36Z",
+      "workflow_run": {
+        "id": 37269278813,
+        "repository_id": 1025842850,
+        "head_repository_id": 1025842850,
+        "head_branch": "main",
+        "head_sha": "5d11aa2a05ce2c943c085acb7b12b583f83ed375"
+      }
+    },
+    {
+      "id": 11328226234,
+      "node_id": "MDg6QXJ0aWZhY3QxMTMyODIyNjIzNA==",
+      "name": "detection",
+      "size_in_bytes": 20408,
+      "url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11328226234",
+      "archive_download_url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11328226234/zip",
+      "expired": false,
+      "digest": "sha256:4925185ded1bdf3b3e0451cb5b9eda62d11b88dc76e1e015662f24ddd05ca040",
+      "created_at": "2026-10-05T05:53:52Z",
+      "updated_at": "2026-10-05T05:53:52Z",
+      "expires_at": "2027-01-03T05:46:36Z",
+      "workflow_run": {
+        "id": 37269278813,
+        "repository_id": 1025842850,
+        "head_repository_id": 1025842850,
+        "head_branch": "main",
+        "head_sha": "5d11aa2a05ce2c943c085acb7b12b583f83ed375"
+      }
+    },
+    {
+      "id": 11328196230,
+      "node_id": "MDg6QXJ0aWZhY3QxMTMyODE5NjIzMA==",
+      "name": "safe-outputs-items",
+      "size_in_bytes": 525,
+      "url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11328196230",
+      "archive_download_url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11328196230/zip",
+      "expired": false,
+      "digest": "sha256:538864d21508347c64367bd20dce0c825b5edef9b34ddcf1799f59de722010f1",
+      "created_at": "2026-10-05T05:54:23Z",
+      "updated_at": "2026-10-05T05:54:23Z",
+      "expires_at": "2027-01-03T05:46:36Z",
+      "workflow_run": {
+        "id": 37269278813,
+        "repository_id": 1025842850,
+        "head_repository_id": 1025842850,
+        "head_branch": "main",
+        "head_sha": "5d11aa2a05ce2c943c085acb7b12b583f83ed375"
+      }
+    },
+    {
+      "id": 11328120479,
+      "node_id": "MDg6QXJ0aWZhY3QxMTMyODEyMDQ3OQ==",
+      "name": "activation",
+      "size_in_bytes": 169523,
+      "url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11328120479",
+      "archive_download_url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11328120479/zip",
+      "expired": false,
+      "digest": "sha256:cf34ea1244aca59fbf40f5f195970f3d32a69e96395467947ea09751843823b7",
+      "created_at": "2026-10-05T05:46:58Z",
+      "updated_at": "2026-10-05T05:46:58Z",
+      "expires_at": "2026-10-06T05:46:57Z",
+      "workflow_run": {
+        "id": 37269278813,
+        "repository_id": 1025842850,
+        "head_repository_id": 1025842850,
+        "head_branch": "main",
+        "head_sha": "5d11aa2a05ce2c943c085acb7b12b583f83ed375"
+      }
+    },
+    {
+      "id": 11328116407,
+      "node_id": "MDg6QXJ0aWZhY3QxMTMyODExNjQwNw==",
+      "name": "usage",
+      "size_in_bytes": 5776,
+      "url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11328116407",
+      "archive_download_url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11328116407/zip",
+      "expired": false,
+      "digest": "sha256:06c92472b05f7dfa3254237eb13bd8cbea54135bce9d56bd19f9a01ca431946d",
+      "created_at": "2026-10-05T05:54:39Z",
+      "updated_at": "2026-10-05T05:54:39Z",
+      "expires_at": "2027-01-03T05:46:36Z",
+      "workflow_run": {
+        "id": 37269278813,
+        "repository_id": 1025842850,
+        "head_repository_id": 1025842850,
+        "head_branch": "main",
+        "head_sha": "5d11aa2a05ce2c943c085acb7b12b583f83ed375"
+      }
+    },
+    {
+      "id": 11328056525,
+      "node_id": "MDg6QXJ0aWZhY3QxMTMyODA1NjUyNQ==",
+      "name": "agent",
+      "size_in_bytes": 1235889,
+      "url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11328056525",
+      "archive_download_url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11328056525/zip",
+      "expired": false,
+      "digest": "sha256:ed0f087aedc0275e98f95b31a30979e9cc50a7d74157fecc501cf2b74caad35c",
+      "created_at": "2026-10-05T05:52:17Z",
+      "updated_at": "2026-10-05T05:52:17Z",
+      "expires_at": "2027-01-03T05:46:36Z",
+      "workflow_run": {
+        "id": 37269278813,
+        "repository_id": 1025842850,
+        "head_repository_id": 1025842850,
+        "head_branch": "main",
+        "head_sha": "5d11aa2a05ce2c943c085acb7b12b583f83ed375"
+      }
+    },
+    {
+      "id": 11327966761,
+      "node_id": "MDg6QXJ0aWZhY3QxMTMyNzk2Njc2MQ==",
+      "name": "cache-memory",
+      "size_in_bytes": 25334,
+      "url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11327966761",
+      "archive_download_url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11327966761/zip",
+      "expired": false,
+      "digest": "sha256:a270d0e957bee952b2dcd6fe22a91d606701e3cebbe77c361ca1c248654c24b4",
+      "created_at": "2026-10-05T05:52:14Z",
+      "updated_at": "2026-10-05T05:52:14Z",
+      "expires_at": "2027-01-03T05:46:36Z",
+      "workflow_run": {
+        "id": 37269278813,
+        "repository_id": 1025842850,
+        "head_repository_id": 1025842850,
+        "head_branch": "main",
+        "head_sha": "5d11aa2a05ce2c943c085acb7b12b583f83ed375"
+      }
+    },
+    {
+      "id": 11327467762,
+      "node_id": "MDg6QXJ0aWZhY3QxMTMyNzQ2Nzc2Mg==",
+      "name": "aic-usage-cache",
+      "size_in_bytes": 261,
+      "url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11327467762",
+      "archive_download_url": "https://api.github.com/repos/githubnext/agentics/actions/artifacts/11327467762/zip",
+      "expired": false,
+      "digest": "sha256:c179928b8519ed80f157016ce286e5bdba0ba33c3fa91371f65d41197f2d9cf0",
+      "created_at": "2026-10-05T05:54:41Z",
+      "updated_at": "2026-10-05T05:54:41Z",
+      "expires_at": "2026-10-12T05:54:41Z",
+      "workflow_run": {
+        "id": 37269278813,
+        "repository_id": 1025842850,
+        "head_repository_id": 1025842850,
+        "head_branch": "main",
+        "head_sha": "5d11aa2a05ce2c943c085acb7b12b583f83ed375"
+      }
+    }
+  ]
+}

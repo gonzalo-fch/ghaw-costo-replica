@@ -1,0 +1,868 @@
+{
+  "schema": "usage-activity-summary/v1",
+  "firewall": {
+    "total_requests": 70,
+    "allowed_requests": 70,
+    "blocked_requests": 0,
+    "allowed_domains": [
+      "api.githubcopilot.com:443"
+    ],
+    "blocked_domains": [],
+    "requests_by_domain": {
+      "api.githubcopilot.com:443": {
+        "allowed": 70,
+        "blocked": 0
+      }
+    }
+  },
+  "gateway": {
+    "total_calls": 71,
+    "failed_calls": 0,
+    "total_input_size": 7197,
+    "total_output_size": 0,
+    "max_input_size": 1194,
+    "max_output_size": 0,
+    "total_duration_ms": 0,
+    "max_duration_ms": 0,
+    "tool_calls": [
+      {
+        "tool_call_id": "call-1",
+        "timestamp": "2026-10-05T12:53:10.286Z",
+        "server_name": "github",
+        "tool_name": "search_repositories",
+        "request_size": 46,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-2",
+        "timestamp": "2026-10-05T12:53:10.997Z",
+        "server_name": "github",
+        "tool_name": "list_issues",
+        "request_size": 203,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-3",
+        "timestamp": "2026-10-05T12:53:11.401Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-4",
+        "timestamp": "2026-10-05T12:53:11.877Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-5",
+        "timestamp": "2026-10-05T12:53:12.324Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-6",
+        "timestamp": "2026-10-05T12:53:12.796Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-7",
+        "timestamp": "2026-10-05T12:53:13.311Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-8",
+        "timestamp": "2026-10-05T12:53:13.733Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-9",
+        "timestamp": "2026-10-05T12:53:18.493Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-10",
+        "timestamp": "2026-10-05T12:53:19.255Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 73,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-11",
+        "timestamp": "2026-10-05T12:53:25.012Z",
+        "server_name": "github",
+        "tool_name": "search_issues",
+        "request_size": 312,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-12",
+        "timestamp": "2026-10-05T12:53:25.673Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-13",
+        "timestamp": "2026-10-05T12:53:26.143Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 74,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-14",
+        "timestamp": "2026-10-05T12:53:26.750Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-15",
+        "timestamp": "2026-10-05T12:53:27.174Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-16",
+        "timestamp": "2026-10-05T12:53:27.697Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-17",
+        "timestamp": "2026-10-05T12:53:28.179Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-18",
+        "timestamp": "2026-10-05T12:53:28.594Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-19",
+        "timestamp": "2026-10-05T12:53:29.077Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-20",
+        "timestamp": "2026-10-05T12:53:29.635Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-21",
+        "timestamp": "2026-10-05T12:53:30.101Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-22",
+        "timestamp": "2026-10-05T12:53:30.536Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-23",
+        "timestamp": "2026-10-05T12:53:31.006Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-24",
+        "timestamp": "2026-10-05T12:53:31.508Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-25",
+        "timestamp": "2026-10-05T12:53:31.948Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-26",
+        "timestamp": "2026-10-05T12:53:43.678Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-27",
+        "timestamp": "2026-10-05T12:53:44.176Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 82,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-28",
+        "timestamp": "2026-10-05T12:53:44.180Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-29",
+        "timestamp": "2026-10-05T12:53:44.699Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 73,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-30",
+        "timestamp": "2026-10-05T12:53:44.704Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-31",
+        "timestamp": "2026-10-05T12:53:45.444Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 73,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-32",
+        "timestamp": "2026-10-05T12:53:45.450Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-33",
+        "timestamp": "2026-10-05T12:53:46.211Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 73,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-34",
+        "timestamp": "2026-10-05T12:53:46.217Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-35",
+        "timestamp": "2026-10-05T12:53:46.748Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 73,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-36",
+        "timestamp": "2026-10-05T12:53:55.670Z",
+        "server_name": "github",
+        "tool_name": "pull_request_read",
+        "request_size": 73,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-37",
+        "timestamp": "2026-10-05T12:53:56.598Z",
+        "server_name": "github",
+        "tool_name": "pull_request_read",
+        "request_size": 71,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-38",
+        "timestamp": "2026-10-05T12:53:57.201Z",
+        "server_name": "github",
+        "tool_name": "pull_request_read",
+        "request_size": 73,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-39",
+        "timestamp": "2026-10-05T12:54:10.789Z",
+        "server_name": "github",
+        "tool_name": "pull_request_read",
+        "request_size": 73,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-40",
+        "timestamp": "2026-10-05T12:54:11.469Z",
+        "server_name": "github",
+        "tool_name": "pull_request_read",
+        "request_size": 80,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-41",
+        "timestamp": "2026-10-05T12:54:11.473Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-42",
+        "timestamp": "2026-10-05T12:54:12.056Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 82,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-43",
+        "timestamp": "2026-10-05T12:54:12.074Z",
+        "server_name": "github",
+        "tool_name": "search_code",
+        "request_size": 61,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-44",
+        "timestamp": "2026-10-05T12:54:31.451Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-45",
+        "timestamp": "2026-10-05T12:54:31.895Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 82,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-46",
+        "timestamp": "2026-10-05T12:54:46.616Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-47",
+        "timestamp": "2026-10-05T12:54:47.092Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 82,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-48",
+        "timestamp": "2026-10-05T12:54:47.097Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-49",
+        "timestamp": "2026-10-05T12:54:47.750Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 82,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-50",
+        "timestamp": "2026-10-05T12:55:00.262Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-51",
+        "timestamp": "2026-10-05T12:55:00.758Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 73,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-52",
+        "timestamp": "2026-10-05T12:55:00.764Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-53",
+        "timestamp": "2026-10-05T12:55:01.208Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 73,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-54",
+        "timestamp": "2026-10-05T12:55:01.214Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 74,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-55",
+        "timestamp": "2026-10-05T12:55:01.920Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 72,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-56",
+        "timestamp": "2026-10-05T12:55:12.978Z",
+        "server_name": "github",
+        "tool_name": "search_issues",
+        "request_size": 169,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-57",
+        "timestamp": "2026-10-05T12:55:12.991Z",
+        "server_name": "github",
+        "tool_name": "search_issues",
+        "request_size": 196,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-58",
+        "timestamp": "2026-10-05T12:55:13.428Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-59",
+        "timestamp": "2026-10-05T12:55:24.925Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-60",
+        "timestamp": "2026-10-05T12:55:25.402Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 82,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-61",
+        "timestamp": "2026-10-05T12:55:25.407Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-62",
+        "timestamp": "2026-10-05T12:55:25.966Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 80,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-63",
+        "timestamp": "2026-10-05T12:55:26.192Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-64",
+        "timestamp": "2026-10-05T12:55:38.800Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-65",
+        "timestamp": "2026-10-05T12:55:39.329Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 82,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-66",
+        "timestamp": "2026-10-05T12:55:51.534Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-67",
+        "timestamp": "2026-10-05T12:55:52.077Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 73,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-68",
+        "timestamp": "2026-10-05T12:56:06.464Z",
+        "server_name": "github",
+        "tool_name": "search_issues",
+        "request_size": 169,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-69",
+        "timestamp": "2026-10-05T12:56:06.476Z",
+        "server_name": "github",
+        "tool_name": "search_issues",
+        "request_size": 169,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-70",
+        "timestamp": "2026-10-05T12:56:06.920Z",
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "request_size": 75,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      },
+      {
+        "tool_call_id": "call-71",
+        "timestamp": "2026-10-05T12:56:46.048Z",
+        "server_name": "safeoutputs",
+        "tool_name": "noop",
+        "request_size": 1194,
+        "response_size": 0,
+        "duration_ms": 0,
+        "outcome": "incomplete"
+      }
+    ],
+    "servers": [
+      {
+        "server_name": "github",
+        "request_count": 70,
+        "tool_call_count": 70,
+        "failed_calls": 0,
+        "total_input_size": 6003,
+        "total_output_size": 0,
+        "total_duration_ms": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "request_count": 1,
+        "tool_call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 1194,
+        "total_output_size": 0,
+        "total_duration_ms": 0,
+        "avg_duration_ms": 0
+      }
+    ],
+    "tools": [
+      {
+        "server_name": "github",
+        "tool_name": "issue_read",
+        "call_count": 57,
+        "failed_calls": 0,
+        "total_input_size": 4308,
+        "total_output_size": 0,
+        "max_input_size": 82,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "github",
+        "tool_name": "list_issues",
+        "call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 203,
+        "total_output_size": 0,
+        "max_input_size": 203,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "github",
+        "tool_name": "pull_request_read",
+        "call_count": 5,
+        "failed_calls": 0,
+        "total_input_size": 370,
+        "total_output_size": 0,
+        "max_input_size": 80,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "github",
+        "tool_name": "search_code",
+        "call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 61,
+        "total_output_size": 0,
+        "max_input_size": 61,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "github",
+        "tool_name": "search_issues",
+        "call_count": 5,
+        "failed_calls": 0,
+        "total_input_size": 1015,
+        "total_output_size": 0,
+        "max_input_size": 312,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "github",
+        "tool_name": "search_repositories",
+        "call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 46,
+        "total_output_size": 0,
+        "max_input_size": 46,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "noop",
+        "call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 1194,
+        "total_output_size": 0,
+        "max_input_size": 1194,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_duration_ms": 0
+      }
+    ]
+  },
+  "safe_outputs": {
+    "total_items": 0,
+    "items_by_type": {},
+    "items": []
+  },
+  "working_set": {
+    "measurement_state": "measured",
+    "cumulative_input_tokens": 9391,
+    "peak_input_tokens": 9349,
+    "rebuild_excess_tokens": 42,
+    "invocations": 22,
+    "rebuild_factor": 1.0044924590865334
+  }
+}

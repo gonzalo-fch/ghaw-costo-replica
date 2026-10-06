@@ -1,0 +1,124 @@
+{
+  "schema": "usage-activity-summary/v1",
+  "firewall": {
+    "total_requests": 92,
+    "allowed_requests": 87,
+    "blocked_requests": 5,
+    "allowed_domains": [
+      "api.githubcopilot.com:443"
+    ],
+    "blocked_domains": [
+      "github.github.io:443"
+    ],
+    "requests_by_domain": {
+      "api.githubcopilot.com:443": {
+        "allowed": 87,
+        "blocked": 0
+      },
+      "github.github.io:443": {
+        "allowed": 0,
+        "blocked": 5
+      }
+    }
+  },
+  "gateway": {
+    "total_calls": 10,
+    "failed_calls": 0,
+    "total_input_size": 2638,
+    "total_output_size": 0,
+    "max_input_size": 1992,
+    "max_output_size": 0,
+    "total_duration_ms": 0,
+    "max_duration_ms": 0,
+    "servers": [
+      {
+        "server_name": "github",
+        "request_count": 9,
+        "tool_call_count": 9,
+        "failed_calls": 0,
+        "total_input_size": 646,
+        "total_output_size": 0,
+        "total_duration_ms": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "request_count": 1,
+        "tool_call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 1992,
+        "total_output_size": 0,
+        "total_duration_ms": 0,
+        "avg_duration_ms": 0
+      }
+    ],
+    "tools": [
+      {
+        "server_name": "github",
+        "tool_name": "get_file_contents",
+        "call_count": 5,
+        "failed_calls": 0,
+        "total_input_size": 453,
+        "total_output_size": 0,
+        "max_input_size": 106,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "github",
+        "tool_name": "search_code",
+        "call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 59,
+        "total_output_size": 0,
+        "max_input_size": 59,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "github",
+        "tool_name": "search_repositories",
+        "call_count": 3,
+        "failed_calls": 0,
+        "total_input_size": 134,
+        "total_output_size": 0,
+        "max_input_size": 46,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_duration_ms": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "tool_name": "create_pull_request",
+        "call_count": 1,
+        "failed_calls": 0,
+        "total_input_size": 1992,
+        "total_output_size": 0,
+        "max_input_size": 1992,
+        "max_output_size": 0,
+        "total_duration_ms": 0,
+        "max_duration_ms": 0,
+        "avg_duration_ms": 0
+      }
+    ]
+  },
+  "safe_outputs": {
+    "total_items": 1,
+    "items_by_type": {
+      "create_pull_request": 1
+    }
+  },
+  "working_set": {
+    "measurement_state": "measured",
+    "cumulative_input_tokens": 5970,
+    "peak_input_tokens": 5908,
+    "rebuild_excess_tokens": 62,
+    "invocations": 32,
+    "rebuild_factor": 1.0104942450914014
+  }
+}

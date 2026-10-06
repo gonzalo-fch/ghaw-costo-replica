@@ -1,0 +1,347 @@
+{
+  "cli_version": "v0.86.2",
+  "run_id": 37235561667,
+  "processed_at": "2026-10-05T17:33:12.3080049-03:00",
+  "run": {
+    "databaseId": 37235561667,
+    "number": 208,
+    "url": "https://github.com/rancher/dashboard/actions/runs/37235561667",
+    "status": "completed",
+    "conclusion": "success",
+    "workflowName": "Daily Issue Grooming",
+    "workflowPath": ".github/workflows/daily-issue-grooming.lock.yml",
+    "createdAt": "2026-10-04T21:18:29Z",
+    "startedAt": "2026-10-04T21:18:29Z",
+    "updatedAt": "2026-10-04T21:23:17Z",
+    "event": "schedule",
+    "headBranch": "master",
+    "headSha": "3ee32042924d1caf841e1acab355ecd970294f91",
+    "displayTitle": "Daily Issue Grooming",
+    "Duration": 288000000000,
+    "ActionMinutes": 5,
+    "TokenUsage": 8776,
+    "Turns": 0,
+    "TurnsAvailable": true,
+    "ErrorCount": 0,
+    "WarningCount": 0,
+    "MissingToolCount": 0,
+    "MissingDataCount": 0,
+    "NoopCount": 0,
+    "EffectiveTokens": 0,
+    "AvgTimeBetweenTurns": 0,
+    "LogsPath": "billing/output/rancher__dashboard/run-37235561667/gh-aw/run-37235561667"
+  },
+  "metrics": {
+    "TokenUsage": 8776,
+    "EstimatedCost": 0,
+    "Turns": 0,
+    "ToolCalls": null,
+    "ToolSequences": null,
+    "AvgTimeBetweenTurns": 0,
+    "MaxTimeBetweenTurns": 0,
+    "MedianTimeBetweenTurns": 0,
+    "StdDevTimeBetweenTurns": 0
+  },
+  "task_domain": {
+    "name": "issue_response",
+    "label": "Issue Response",
+    "reason": "The run is primarily interacting with issue, discussion, or comment threads."
+  },
+  "behavior_fingerprint": {
+    "execution_style": "directed",
+    "tool_breadth": "narrow",
+    "actuation_style": "read_only",
+    "resource_profile": "lean",
+    "dispatch_mode": "standalone",
+    "agentic_fraction": 0
+  },
+  "agentic_assessments": [
+    {
+      "kind": "overkill_for_agentic",
+      "severity": "low",
+      "summary": "This Issue Response run looks stable enough that deterministic automation may be a simpler fit.",
+      "evidence": "turns=0 tool_types=0 actuation=read_only",
+      "recommendation": "Consider whether a scripted rule or deterministic workflow step could replace this agentic path."
+    }
+  ],
+  "access_analysis": null,
+  "firewall_analysis": {
+    "allowed_domains": [
+      "api.githubcopilot.com:443"
+    ],
+    "total_requests": 28,
+    "allowed_requests": 28,
+    "blocked_requests": 0,
+    "requests_by_domain": {
+      "api.githubcopilot.com:443": {
+        "allowed": 28,
+        "blocked": 0
+      }
+    }
+  },
+  "redacted_domains_analysis": null,
+  "missing_tools": null,
+  "missing_data": null,
+  "noops": null,
+  "mcp_failures": null,
+  "mcp_tool_usage": {
+    "summary": [],
+    "tool_calls": [],
+    "servers": [
+      {
+        "server_name": "github",
+        "request_count": 89,
+        "tool_call_count": 89,
+        "total_input_size": 0,
+        "total_output_size": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "request_count": 1,
+        "tool_call_count": 1,
+        "total_input_size": 0,
+        "total_output_size": 0
+      }
+    ]
+  },
+  "token_usage_summary": {
+    "total_input_tokens": 6322,
+    "total_output_tokens": 2454,
+    "total_cache_read_tokens": 268413,
+    "total_cache_write_tokens": 51041,
+    "total_requests": 7,
+    "total_duration_ms": 29291,
+    "total_response_bytes": 106474,
+    "cache_efficiency": 0,
+    "total_aic": 20.58251,
+    "ambient_context": {
+      "input_tokens": 6310,
+      "cached_tokens": 0
+    },
+    "by_model": {
+      "claude-sonnet-5": {
+        "provider": "copilot",
+        "input_tokens": 6322,
+        "output_tokens": 2454,
+        "cache_read_tokens": 268413,
+        "cache_write_tokens": 51041,
+        "requests": 7,
+        "duration_ms": 29291,
+        "response_bytes": 106474,
+        "aic": 20.58251
+      }
+    }
+  },
+  "github_rate_limit_usage": {
+    "total_requests_made": 10,
+    "core_consumed": 2,
+    "core_consumed_source": "response_headers_delta",
+    "core_remaining": 14998,
+    "core_limit": 15000,
+    "resources": [
+      {
+        "resource": "core",
+        "requests_made": 10,
+        "quota_consumed": 2,
+        "final_remaining": 14998,
+        "limit": 15000
+      },
+      {
+        "resource": "enterprise_token_inventory",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 1750,
+        "limit": 1750
+      },
+      {
+        "resource": "audit_log",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 1750,
+        "limit": 1750
+      },
+      {
+        "resource": "graphql",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 10000,
+        "limit": 10000
+      },
+      {
+        "resource": "code_search",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 10,
+        "limit": 10
+      },
+      {
+        "resource": "search",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 30,
+        "limit": 30
+      },
+      {
+        "resource": "integration_manifest",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 5000,
+        "limit": 5000
+      },
+      {
+        "resource": "scim",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 15000,
+        "limit": 15000
+      },
+      {
+        "resource": "dependency_sbom",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 200,
+        "limit": 200
+      },
+      {
+        "resource": "code_scanning_autofix",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 10,
+        "limit": 10
+      },
+      {
+        "resource": "copilot_usage_records",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 1750,
+        "limit": 1750
+      },
+      {
+        "resource": "source_import",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 100,
+        "limit": 100
+      },
+      {
+        "resource": "actions_runner_registration",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 20000,
+        "limit": 20000
+      },
+      {
+        "resource": "dependency_snapshots",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 100,
+        "limit": 100
+      },
+      {
+        "resource": "audit_log_streaming",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 15,
+        "limit": 15
+      }
+    ]
+  },
+  "artifacts_list": [
+    ".downloaded-artifacts/activation",
+    ".downloaded-artifacts/usage",
+    "aw-prompts/prompt-import-tree.json",
+    "aw-prompts/prompt-template.txt",
+    "aw-prompts/prompt.txt",
+    "aw_info.json",
+    "base/.github/CODEOWNERS",
+    "base/.github/ISSUE_TEMPLATE/bug_report.md",
+    "base/.github/ISSUE_TEMPLATE/feature_request.md",
+    "base/.github/ISSUE_TEMPLATE/question.md",
+    "base/.github/OWNERS.md",
+    "base/.github/actions/i18n-lint/action.yaml",
+    "base/.github/actions/install-chrome/action.yaml",
+    "base/.github/actions/install-codecov/action.yaml",
+    "base/.github/actions/lint/action.yaml",
+    "base/.github/actions/setup/action.yaml",
+    "base/.github/actions/type-check/action.yaml",
+    "base/.github/actions/unit-tests/action.yaml",
+    "base/.github/aw/actions-lock.json",
+    "base/.github/dependabot.yml",
+    "base/.github/pull_request_template.md",
+    "base/.github/workflows/add-issue-labels.yaml",
+    "base/.github/workflows/agentics-maintenance.yml",
+    "base/.github/workflows/auto-retry.yaml",
+    "base/.github/workflows/automation-candidate.yaml",
+    "base/.github/workflows/build-and-upload-branch.yaml",
+    "base/.github/workflows/build-and-upload-release.yaml",
+    "base/.github/workflows/build-and-upload.yaml",
+    "base/.github/workflows/build-extension-catalog.yml",
+    "base/.github/workflows/build-extension-charts.yml",
+    "base/.github/workflows/build-extensions-test.yml",
+    "base/.github/workflows/build-test.yaml",
+    "base/.github/workflows/check-plugins.yaml",
+    "base/.github/workflows/ci-failure-inspection.yaml",
+    "base/.github/workflows/code-coverage.yaml",
+    "base/.github/workflows/create-pr-build-extension-charts.yml",
+    "base/.github/workflows/daily-accessibility-review.lock.yml",
+    "base/.github/workflows/daily-accessibility-review.md",
+    "base/.github/workflows/daily-issue-grooming.lock.yml",
+    "base/.github/workflows/daily-issue-grooming.md",
+    "base/.github/workflows/daily-repo-status.lock.yml",
+    "base/.github/workflows/daily-repo-status.md",
+    "base/.github/workflows/daily-test-improver.lock.yml",
+    "base/.github/workflows/daily-test-improver.md",
+    "base/.github/workflows/dependabot-milestone.yaml",
+    "base/.github/workflows/docusaurus.yaml",
+    "base/.github/workflows/duplicate-code-detector.lock.yml",
+    "base/.github/workflows/duplicate-code-detector.md",
+    "base/.github/workflows/extension-compatibility-test.yml",
+    "base/.github/workflows/fossa.yaml",
+    "base/.github/workflows/issue-triage.lock.yml",
+    "base/.github/workflows/issue-triage.md",
+    "base/.github/workflows/port-issue.yaml",
+    "base/.github/workflows/port-pr.yaml",
+    "base/.github/workflows/pr-fix.lock.yml",
+    "base/.github/workflows/pr-fix.md",
+    "base/.github/workflows/pr-gh-project-processor.yaml",
+    "base/.github/workflows/pr-gh-project.yaml",
+    "base/.github/workflows/rancher-components.yaml",
+    "base/.github/workflows/release-cypress-pkg.yaml",
+    "base/.github/workflows/release-rancher-components.yml",
+    "base/.github/workflows/release-shell-pkg.yaml",
+    "base/.github/workflows/scripts/__tests__/weekly-stale-issue-manager.candidates.test.ts",
+    "base/.github/workflows/scripts/__tests__/weekly-stale-issue-manager.test.ts",
+    "base/.github/workflows/scripts/add-issue-labels.js",
+    "base/.github/workflows/scripts/build-dashboard.sh",
+    "base/.github/workflows/scripts/check-creators-workflows-code.sh",
+    "base/.github/workflows/scripts/check-package-tag-version.sh",
+    "base/.github/workflows/scripts/dependabot-milestone.sh",
+    "base/.github/workflows/scripts/install-codecov.sh",
+    "base/.github/workflows/scripts/port-pr-get-branch-and-issue.sh",
+    "base/.github/workflows/scripts/pr-check-checklist.sh",
+    "base/.github/workflows/scripts/pr-check-milestone.sh",
+    "base/.github/workflows/scripts/pr-gh-project.js",
+    "base/.github/workflows/scripts/publish-storybook",
+    "base/.github/workflows/scripts/request.js",
+    "base/.github/workflows/scripts/retrieve-versions.sh",
+    "base/.github/workflows/scripts/test-extensions-creators-build.sh",
+    "base/.github/workflows/scripts/update-cloud-data.sh",
+    "base/.github/workflows/scripts/weekly-stale-issue-manager.js",
+    "base/.github/workflows/storybook.yaml",
+    "base/.github/workflows/test-extension-workflows-master.yml",
+    "base/.github/workflows/test.yaml",
+    "base/.github/workflows/update-cloud-data.yml",
+    "base/.github/workflows/valid-milestone-change.yml",
+    "base/.github/workflows/valid-pr.yaml",
+    "base/.github/workflows/weekly-stale-issue-manager.yaml",
+    "base/AGENTS.md",
+    "github_rate_limits.jsonl",
+    "models.json",
+    "usage/activity/summary.json",
+    "usage/agent/token_usage.jsonl",
+    "usage/agent_usage.json",
+    "usage/detection/token_usage.jsonl",
+    "usage/github_rate_limits.jsonl"
+  ],
+  "job_details": null
+}

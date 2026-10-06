@@ -1,0 +1,282 @@
+{
+  "cli_version": "v0.86.2",
+  "run_id": 37269278813,
+  "processed_at": "2026-10-05T17:32:49.416282543-03:00",
+  "run": {
+    "databaseId": 37269278813,
+    "number": 170,
+    "url": "https://github.com/githubnext/agentics/actions/runs/37269278813",
+    "status": "completed",
+    "conclusion": "success",
+    "workflowName": "Daily Link Checker \u0026 Fixer",
+    "workflowPath": ".github/workflows/link-checker.lock.yml",
+    "createdAt": "2026-10-05T05:46:36Z",
+    "startedAt": "2026-10-05T05:46:36Z",
+    "updatedAt": "2026-10-05T05:54:46Z",
+    "event": "schedule",
+    "headBranch": "main",
+    "headSha": "5d11aa2a05ce2c943c085acb7b12b583f83ed375",
+    "displayTitle": "Daily Link Checker \u0026 Fixer",
+    "Duration": 490000000000,
+    "ActionMinutes": 9,
+    "TokenUsage": 17846,
+    "Turns": 0,
+    "TurnsAvailable": true,
+    "ErrorCount": 0,
+    "WarningCount": 0,
+    "MissingToolCount": 0,
+    "MissingDataCount": 0,
+    "NoopCount": 0,
+    "safe_items_count": 1,
+    "EffectiveTokens": 0,
+    "AvgTimeBetweenTurns": 0,
+    "LogsPath": "billing/output/githubnext__agentics/run-37269278813/gh-aw/run-37269278813"
+  },
+  "metrics": {
+    "TokenUsage": 17846,
+    "EstimatedCost": 0,
+    "Turns": 0,
+    "ToolCalls": null,
+    "ToolSequences": null,
+    "AvgTimeBetweenTurns": 0,
+    "MaxTimeBetweenTurns": 0,
+    "MedianTimeBetweenTurns": 0,
+    "StdDevTimeBetweenTurns": 0
+  },
+  "task_domain": {
+    "name": "code_fix",
+    "label": "Code Fix",
+    "reason": "The workflow appears oriented toward code changes or pull request review."
+  },
+  "behavior_fingerprint": {
+    "execution_style": "directed",
+    "tool_breadth": "narrow",
+    "actuation_style": "selective_write",
+    "resource_profile": "moderate",
+    "dispatch_mode": "standalone",
+    "agentic_fraction": 0
+  },
+  "access_analysis": null,
+  "firewall_analysis": {
+    "allowed_domains": [
+      "api.githubcopilot.com:443"
+    ],
+    "blocked_domains": [
+      "github.github.io:443"
+    ],
+    "total_requests": 92,
+    "allowed_requests": 87,
+    "blocked_requests": 5,
+    "requests_by_domain": {
+      "api.githubcopilot.com:443": {
+        "allowed": 87,
+        "blocked": 0
+      },
+      "github.github.io:443": {
+        "allowed": 0,
+        "blocked": 5
+      }
+    }
+  },
+  "redacted_domains_analysis": null,
+  "missing_tools": null,
+  "missing_data": null,
+  "noops": null,
+  "mcp_failures": null,
+  "mcp_tool_usage": {
+    "summary": [],
+    "tool_calls": [],
+    "servers": [
+      {
+        "server_name": "github",
+        "request_count": 9,
+        "tool_call_count": 9,
+        "total_input_size": 0,
+        "total_output_size": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "request_count": 1,
+        "tool_call_count": 1,
+        "total_input_size": 0,
+        "total_output_size": 0
+      }
+    ]
+  },
+  "token_usage_summary": {
+    "total_input_tokens": 5970,
+    "total_output_tokens": 11876,
+    "total_cache_read_tokens": 1846557,
+    "total_cache_write_tokens": 77032,
+    "total_requests": 32,
+    "total_duration_ms": 158820,
+    "total_response_bytes": 552437,
+    "cache_efficiency": 0,
+    "total_aic": 68.06513999999999,
+    "ambient_context": {
+      "input_tokens": 5908,
+      "cached_tokens": 0
+    },
+    "by_model": {
+      "claude-sonnet-5": {
+        "provider": "copilot",
+        "input_tokens": 5970,
+        "output_tokens": 11876,
+        "cache_read_tokens": 1846557,
+        "cache_write_tokens": 77032,
+        "requests": 32,
+        "duration_ms": 158820,
+        "response_bytes": 552437,
+        "aic": 68.06513999999999
+      }
+    }
+  },
+  "github_rate_limit_usage": {
+    "total_requests_made": 10,
+    "core_consumed": 2,
+    "core_consumed_source": "response_headers_delta",
+    "core_remaining": 14998,
+    "core_limit": 15000,
+    "resources": [
+      {
+        "resource": "core",
+        "requests_made": 10,
+        "quota_consumed": 2,
+        "final_remaining": 14998,
+        "limit": 15000
+      },
+      {
+        "resource": "code_search",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 10,
+        "limit": 10
+      },
+      {
+        "resource": "scim",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 15000,
+        "limit": 15000
+      },
+      {
+        "resource": "search",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 30,
+        "limit": 30
+      },
+      {
+        "resource": "integration_manifest",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 5000,
+        "limit": 5000
+      },
+      {
+        "resource": "audit_log",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 1750,
+        "limit": 1750
+      },
+      {
+        "resource": "code_scanning_autofix",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 10,
+        "limit": 10
+      },
+      {
+        "resource": "actions_runner_registration",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 20000,
+        "limit": 20000
+      },
+      {
+        "resource": "copilot_usage_records",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 1750,
+        "limit": 1750
+      },
+      {
+        "resource": "dependency_snapshots",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 100,
+        "limit": 100
+      },
+      {
+        "resource": "dependency_sbom",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 200,
+        "limit": 200
+      },
+      {
+        "resource": "enterprise_token_inventory",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 1750,
+        "limit": 1750
+      },
+      {
+        "resource": "audit_log_streaming",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 15,
+        "limit": 15
+      },
+      {
+        "resource": "graphql",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 10000,
+        "limit": 10000
+      },
+      {
+        "resource": "source_import",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 100,
+        "limit": 100
+      }
+    ]
+  },
+  "artifacts_list": [
+    ".downloaded-artifacts/activation",
+    ".downloaded-artifacts/usage",
+    "aw-prompts/prompt-import-tree.json",
+    "aw-prompts/prompt-template.txt",
+    "aw-prompts/prompt.txt",
+    "aw_info.json",
+    "base/.github/agents/agentic-workflows.md",
+    "base/.github/agents/contribution-checker.agent.md",
+    "base/.github/aw/actions-lock.json",
+    "base/.github/skills/agentic-workflows/SKILL.md",
+    "base/.github/workflows/agentics-maintenance.yml",
+    "base/.github/workflows/ci.yml",
+    "base/.github/workflows/copilot-setup-steps.yml",
+    "base/.github/workflows/daily-repo-goals.lock.yml",
+    "base/.github/workflows/daily-repo-goals.md",
+    "base/.github/workflows/daily-workflow-sync.lock.yml",
+    "base/.github/workflows/daily-workflow-sync.md",
+    "base/.github/workflows/import-workflow.lock.yml",
+    "base/.github/workflows/import-workflow.md",
+    "base/.github/workflows/link-checker.lock.yml",
+    "base/.github/workflows/link-checker.md",
+    "base/.github/workflows/maintainer.lock.yml",
+    "base/.github/workflows/maintainer.md",
+    "base/.github/workflows/typos.yml",
+    "github_rate_limits.jsonl",
+    "models.json",
+    "usage/activity/summary.json",
+    "usage/agent/token_usage.jsonl",
+    "usage/agent_usage.json",
+    "usage/detection/token_usage.jsonl",
+    "usage/github_rate_limits.jsonl"
+  ],
+  "job_details": null
+}

@@ -1,0 +1,125 @@
+{
+  "total_count": 6,
+  "artifacts": [
+    {
+      "id": 11103933486,
+      "node_id": "MDg6QXJ0aWZhY3QxMTEwMzkzMzQ4Ng==",
+      "name": "agent",
+      "size_in_bytes": 159068,
+      "url": "https://api.github.com/repos/vaadin/flow/actions/artifacts/11103933486",
+      "archive_download_url": "https://api.github.com/repos/vaadin/flow/actions/artifacts/11103933486/zip",
+      "expired": false,
+      "digest": "sha256:3fc712f149a355c61390781508243b53476d3b37d5b6b1da8e295f81a46db400",
+      "created_at": "2026-09-30T14:24:42Z",
+      "updated_at": "2026-09-30T14:24:42Z",
+      "expires_at": "2026-10-30T14:19:23Z",
+      "workflow_run": {
+        "id": 36728232182,
+        "repository_id": 34809191,
+        "head_repository_id": 34809191,
+        "head_branch": "fix/quarkus-native-interface-implementations",
+        "head_sha": "56ab43d9259fbffde908c0f4ad3607c848503974"
+      }
+    },
+    {
+      "id": 11103594252,
+      "node_id": "MDg6QXJ0aWZhY3QxMTEwMzU5NDI1Mg==",
+      "name": "usage",
+      "size_in_bytes": 3187,
+      "url": "https://api.github.com/repos/vaadin/flow/actions/artifacts/11103594252",
+      "archive_download_url": "https://api.github.com/repos/vaadin/flow/actions/artifacts/11103594252/zip",
+      "expired": false,
+      "digest": "sha256:9c4a61c9a9a7db52fa720724dc760e2effd31afa5b9875d795528a0d49d7c7e8",
+      "created_at": "2026-09-30T14:26:27Z",
+      "updated_at": "2026-09-30T14:26:27Z",
+      "expires_at": "2026-10-30T14:19:23Z",
+      "workflow_run": {
+        "id": 36728232182,
+        "repository_id": 34809191,
+        "head_repository_id": 34809191,
+        "head_branch": "fix/quarkus-native-interface-implementations",
+        "head_sha": "56ab43d9259fbffde908c0f4ad3607c848503974"
+      }
+    },
+    {
+      "id": 11103284753,
+      "node_id": "MDg6QXJ0aWZhY3QxMTEwMzI4NDc1Mw==",
+      "name": "aic-usage-cache",
+      "size_in_bytes": 260,
+      "url": "https://api.github.com/repos/vaadin/flow/actions/artifacts/11103284753",
+      "archive_download_url": "https://api.github.com/repos/vaadin/flow/actions/artifacts/11103284753/zip",
+      "expired": false,
+      "digest": "sha256:436fd34e915a2dad0a5e460f1c53050ac9d421cb6787698b17c85e7d95f306a1",
+      "created_at": "2026-09-30T14:26:28Z",
+      "updated_at": "2026-09-30T14:26:28Z",
+      "expires_at": "2026-10-07T14:26:28Z",
+      "workflow_run": {
+        "id": 36728232182,
+        "repository_id": 34809191,
+        "head_repository_id": 34809191,
+        "head_branch": "fix/quarkus-native-interface-implementations",
+        "head_sha": "56ab43d9259fbffde908c0f4ad3607c848503974"
+      }
+    },
+    {
+      "id": 11103059789,
+      "node_id": "MDg6QXJ0aWZhY3QxMTEwMzA1OTc4OQ==",
+      "name": "detection",
+      "size_in_bytes": 37615,
+      "url": "https://api.github.com/repos/vaadin/flow/actions/artifacts/11103059789",
+      "archive_download_url": "https://api.github.com/repos/vaadin/flow/actions/artifacts/11103059789/zip",
+      "expired": false,
+      "digest": "sha256:daebad36aabf6593873983d53adacb1248d8be06262af0ff511214ec0b9a5e80",
+      "created_at": "2026-09-30T14:25:41Z",
+      "updated_at": "2026-09-30T14:25:41Z",
+      "expires_at": "2026-10-30T14:19:23Z",
+      "workflow_run": {
+        "id": 36728232182,
+        "repository_id": 34809191,
+        "head_repository_id": 34809191,
+        "head_branch": "fix/quarkus-native-interface-implementations",
+        "head_sha": "56ab43d9259fbffde908c0f4ad3607c848503974"
+      }
+    },
+    {
+      "id": 11103009885,
+      "node_id": "MDg6QXJ0aWZhY3QxMTEwMzAwOTg4NQ==",
+      "name": "safe-outputs-items",
+      "size_in_bytes": 439,
+      "url": "https://api.github.com/repos/vaadin/flow/actions/artifacts/11103009885",
+      "archive_download_url": "https://api.github.com/repos/vaadin/flow/actions/artifacts/11103009885/zip",
+      "expired": false,
+      "digest": "sha256:336d3fe529a6a04c8e2b8b8669d4227df4fb58ad23e366b111f50d9989c9221d",
+      "created_at": "2026-09-30T14:26:13Z",
+      "updated_at": "2026-09-30T14:26:13Z",
+      "expires_at": "2026-10-30T14:19:23Z",
+      "workflow_run": {
+        "id": 36728232182,
+        "repository_id": 34809191,
+        "head_repository_id": 34809191,
+        "head_branch": "fix/quarkus-native-interface-implementations",
+        "head_sha": "56ab43d9259fbffde908c0f4ad3607c848503974"
+      }
+    },
+    {
+      "id": 11102623997,
+      "node_id": "MDg6QXJ0aWZhY3QxMTEwMjYyMzk5Nw==",
+      "name": "activation",
+      "size_in_bytes": 204769,
+      "url": "https://api.github.com/repos/vaadin/flow/actions/artifacts/11102623997",
+      "archive_download_url": "https://api.github.com/repos/vaadin/flow/actions/artifacts/11102623997/zip",
+      "expired": false,
+      "digest": "sha256:239ece3f3d7c05966fe2784b2eb9fce9c3ad9f04ac5622b580d4eddf2770ea17",
+      "created_at": "2026-09-30T14:20:18Z",
+      "updated_at": "2026-09-30T14:20:18Z",
+      "expires_at": "2026-10-01T14:20:17Z",
+      "workflow_run": {
+        "id": 36728232182,
+        "repository_id": 34809191,
+        "head_repository_id": 34809191,
+        "head_branch": "fix/quarkus-native-interface-implementations",
+        "head_sha": "56ab43d9259fbffde908c0f4ad3607c848503974"
+      }
+    }
+  ]
+}

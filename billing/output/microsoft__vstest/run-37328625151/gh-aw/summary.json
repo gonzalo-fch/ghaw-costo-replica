@@ -1,0 +1,214 @@
+{
+  "summary": {
+    "total_runs": 1,
+    "total_duration": "6.8m",
+    "total_aic": 20.43162,
+    "total_tokens": 10574,
+    "total_action_minutes": 7,
+    "total_turns": 0,
+    "total_errors": 0,
+    "total_warnings": 0,
+    "total_missing_tools": 0,
+    "total_missing_data": 0,
+    "total_safe_items": 0,
+    "total_driver_exit_failures": 0,
+    "total_agent_logic_failures": 0,
+    "total_episodes": 1,
+    "high_confidence_episodes": 1,
+    "total_github_api_calls": 19,
+    "engine_counts": {
+      "copilot": 1
+    }
+  },
+  "runs": [
+    {
+      "run_id": 37328625151,
+      "number": 110,
+      "workflow_name": "Code Simplifier",
+      "workflow_path": ".github/workflows/code-simplifier.lock.yml",
+      "agent": "copilot",
+      "engine": "GitHub Copilot CLI",
+      "engine_id": "copilot",
+      "status": "completed",
+      "conclusion": "success",
+      "classification": "baseline",
+      "duration": "6.8m",
+      "action_minutes": 7,
+      "token_usage": 10574,
+      "aic": 20.43162,
+      "ambient_context": {
+        "input_tokens": 8563,
+        "cached_tokens": 0
+      },
+      "created_at": "2026-10-05T14:55:16Z",
+      "started_at": "2026-10-05T14:55:16Z",
+      "updated_at": "2026-10-05T15:02:05Z",
+      "url": "https://github.com/microsoft/vstest/actions/runs/37328625151",
+      "logs_path": "billing/output/microsoft__vstest/run-37328625151/gh-aw/run-37328625151",
+      "event": "schedule",
+      "branch": "main",
+      "head_sha": "05cd78191d1e42585744353e492f81dc3f2c2470",
+      "display_title": "Code Simplifier",
+      "repository": "microsoft/vstest",
+      "organization": "microsoft",
+      "ref": "refs/heads/main",
+      "sha": "05cd78191d1e42585744353e492f81dc3f2c2470",
+      "actor": "Evangelink",
+      "run_attempt": "1",
+      "event_name": "schedule",
+      "comparison": {
+        "baseline_found": false
+      },
+      "task_domain": {
+        "name": "code_fix",
+        "label": "Code Fix",
+        "reason": "The workflow appears oriented toward code changes or pull request review."
+      },
+      "behavior_fingerprint": {
+        "execution_style": "directed",
+        "tool_breadth": "narrow",
+        "actuation_style": "read_only",
+        "resource_profile": "moderate",
+        "dispatch_mode": "standalone",
+        "agentic_fraction": 0
+      },
+      "token_usage_summary": {
+        "total_input_tokens": 8573,
+        "total_output_tokens": 2001,
+        "total_cache_read_tokens": 246606,
+        "total_cache_write_tokens": 53994,
+        "total_requests": 6,
+        "total_duration_ms": 26084,
+        "total_response_bytes": 84745,
+        "cache_efficiency": 0,
+        "total_aic": 20.43162,
+        "ambient_context": {
+          "input_tokens": 8563,
+          "cached_tokens": 0
+        },
+        "by_model": {
+          "claude-sonnet-5": {
+            "provider": "copilot",
+            "input_tokens": 8573,
+            "output_tokens": 2001,
+            "cache_read_tokens": 246606,
+            "cache_write_tokens": 53994,
+            "requests": 6,
+            "duration_ms": 26084,
+            "response_bytes": 84745,
+            "aic": 20.43162
+          }
+        }
+      },
+      "github_api_calls": 19
+    }
+  ],
+  "episodes": [
+    {
+      "episode_id": "standalone:37328625151",
+      "kind": "standalone",
+      "confidence": "high",
+      "reasons": [
+        "no_shared_lineage_markers"
+      ],
+      "root_run_id": 37328625151,
+      "run_ids": [
+        37328625151
+      ],
+      "workflow_names": [
+        "Code Simplifier"
+      ],
+      "primary_workflow": "Code Simplifier",
+      "total_runs": 1,
+      "total_tokens": 10574,
+      "total_aic": 20.43162,
+      "total_duration": "6.8m",
+      "risky_node_count": 0,
+      "changed_node_count": 0,
+      "write_capable_node_count": 0,
+      "missing_tool_count": 0,
+      "mcp_failure_count": 0,
+      "blocked_request_count": 0,
+      "latest_success_fallback_count": 0,
+      "new_mcp_failure_run_count": 0,
+      "blocked_request_increase_run_count": 0,
+      "resource_heavy_node_count": 0,
+      "poor_control_node_count": 0,
+      "risk_distribution": "none",
+      "escalation_eligible": false,
+      "suggested_route": "workflow:Code Simplifier",
+      "repository": "microsoft/vstest",
+      "organization": "microsoft"
+    }
+  ],
+  "edges": [],
+  "mcp_tool_usage": {
+    "summary": null,
+    "servers": [
+      {
+        "server_name": "github",
+        "request_count": 39,
+        "tool_call_count": 39,
+        "total_input_size": 0,
+        "total_output_size": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "request_count": 1,
+        "tool_call_count": 1,
+        "total_input_size": 0,
+        "total_output_size": 0
+      }
+    ],
+    "tool_calls": null
+  },
+  "observability_insights": [
+    {
+      "category": "actuation",
+      "severity": "info",
+      "title": "Actuation mix summarized",
+      "summary": "Across 1 run(s), 0 executed write-capable safe outputs and 1 stayed read-only.",
+      "evidence": "write_runs=0 read_only_runs=1"
+    },
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Cross-run log template patterns",
+      "summary": "Mined 1 distinct event templates across 6 pipeline stages from 1 events in 1 runs.",
+      "evidence": "finish=1"
+    }
+  ],
+  "firewall_log": {
+    "total_requests": 30,
+    "allowed_requests": 30,
+    "blocked_requests": 0,
+    "allowed_domains": [
+      "api.githubcopilot.com:443"
+    ],
+    "blocked_domains": null,
+    "requests_by_domain": {
+      "api.githubcopilot.com:443": {
+        "allowed": 30,
+        "blocked": 0
+      }
+    },
+    "by_workflow": {
+      "Code Simplifier": {
+        "allowed_domains": [
+          "api.githubcopilot.com:443"
+        ],
+        "total_requests": 30,
+        "allowed_requests": 30,
+        "blocked_requests": 0,
+        "requests_by_domain": {
+          "api.githubcopilot.com:443": {
+            "allowed": 30,
+            "blocked": 0
+          }
+        }
+      }
+    }
+  },
+  "logs_location": "/home/gonzalo/Escritorio/Proyectos/gaw_billing/billing/output/microsoft__vstest/run-37328625151/gh-aw",
+  "message": "Only the usage artifact was downloaded. Use --artifacts all to download all artifacts, or a specific set such as --artifacts agent, or combinations such as --artifacts agent,firewall."
+}

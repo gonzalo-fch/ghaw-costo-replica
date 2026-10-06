@@ -1,0 +1,268 @@
+{
+  "cli_version": "v0.86.2",
+  "run_id": 36728232182,
+  "processed_at": "2026-09-30T15:19:03.642196277-03:00",
+  "run": {
+    "databaseId": 36728232182,
+    "number": 124,
+    "url": "https://github.com/vaadin/flow/actions/runs/36728232182",
+    "status": "completed",
+    "conclusion": "success",
+    "workflowName": "Documentation Bot",
+    "workflowPath": ".github/workflows/doc-bot.lock.yml",
+    "createdAt": "2026-09-30T14:19:22Z",
+    "startedAt": "2026-09-30T14:19:22Z",
+    "updatedAt": "2026-09-30T14:26:35Z",
+    "event": "pull_request_target",
+    "headBranch": "fix/quarkus-native-interface-implementations",
+    "headSha": "56ab43d9259fbffde908c0f4ad3607c848503974",
+    "displayTitle": "Documentation Bot",
+    "Duration": 433000000000,
+    "ActionMinutes": 8,
+    "TokenUsage": 18592,
+    "Turns": 0,
+    "TurnsAvailable": true,
+    "ErrorCount": 0,
+    "WarningCount": 0,
+    "MissingToolCount": 0,
+    "MissingDataCount": 0,
+    "NoopCount": 0,
+    "safe_items_count": 1,
+    "EffectiveTokens": 0,
+    "AvgTimeBetweenTurns": 0,
+    "LogsPath": "billing/output/vaadin__flow/run-36728232182/gh-aw/run-36728232182"
+  },
+  "metrics": {
+    "TokenUsage": 18592,
+    "EstimatedCost": 0,
+    "Turns": 0,
+    "ToolCalls": null,
+    "ToolSequences": null,
+    "AvgTimeBetweenTurns": 0,
+    "MaxTimeBetweenTurns": 0,
+    "MedianTimeBetweenTurns": 0,
+    "StdDevTimeBetweenTurns": 0
+  },
+  "task_domain": {
+    "name": "general_automation",
+    "label": "General Automation",
+    "reason": "The run does not strongly match a narrower workflow domain yet."
+  },
+  "behavior_fingerprint": {
+    "execution_style": "directed",
+    "tool_breadth": "narrow",
+    "actuation_style": "selective_write",
+    "resource_profile": "moderate",
+    "dispatch_mode": "standalone",
+    "agentic_fraction": 0
+  },
+  "access_analysis": null,
+  "firewall_analysis": {
+    "allowed_domains": [
+      "api.anthropic.com:443"
+    ],
+    "total_requests": 34,
+    "allowed_requests": 34,
+    "blocked_requests": 0,
+    "requests_by_domain": {
+      "api.anthropic.com:443": {
+        "allowed": 34,
+        "blocked": 0
+      }
+    }
+  },
+  "redacted_domains_analysis": null,
+  "missing_tools": null,
+  "missing_data": null,
+  "noops": null,
+  "mcp_failures": null,
+  "token_usage_summary": {
+    "total_input_tokens": 11719,
+    "total_output_tokens": 6873,
+    "total_cache_read_tokens": 886469,
+    "total_cache_write_tokens": 82262,
+    "total_requests": 14,
+    "total_duration_ms": 94275,
+    "total_response_bytes": 42567,
+    "cache_efficiency": 0,
+    "total_aic": 45.167880000000004,
+    "ambient_context": {
+      "input_tokens": 11693,
+      "cached_tokens": 0
+    },
+    "by_model": {
+      "claude-sonnet-5": {
+        "provider": "anthropic",
+        "input_tokens": 11719,
+        "output_tokens": 6873,
+        "cache_read_tokens": 886469,
+        "cache_write_tokens": 82262,
+        "requests": 14,
+        "duration_ms": 94275,
+        "response_bytes": 42567,
+        "aic": 45.167880000000004
+      }
+    }
+  },
+  "github_rate_limit_usage": {
+    "total_requests_made": 35,
+    "core_consumed": 36,
+    "core_consumed_source": "response_headers_delta",
+    "core_remaining": 4955,
+    "core_limit": 5000,
+    "resources": [
+      {
+        "resource": "core",
+        "requests_made": 35,
+        "quota_consumed": 36,
+        "final_remaining": 4955,
+        "limit": 5000
+      },
+      {
+        "resource": "search",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 30,
+        "limit": 30
+      },
+      {
+        "resource": "source_import",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 100,
+        "limit": 100
+      },
+      {
+        "resource": "scim",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 15000,
+        "limit": 15000
+      },
+      {
+        "resource": "dependency_snapshots",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 100,
+        "limit": 100
+      },
+      {
+        "resource": "enterprise_token_inventory",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 1750,
+        "limit": 1750
+      },
+      {
+        "resource": "dependency_sbom",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 100,
+        "limit": 100
+      },
+      {
+        "resource": "audit_log",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 1750,
+        "limit": 1750
+      },
+      {
+        "resource": "code_search",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 10,
+        "limit": 10
+      },
+      {
+        "resource": "integration_manifest",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 5000,
+        "limit": 5000
+      },
+      {
+        "resource": "code_scanning_autofix",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 10,
+        "limit": 10
+      },
+      {
+        "resource": "actions_runner_registration",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 10000,
+        "limit": 10000
+      },
+      {
+        "resource": "graphql",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 5000,
+        "limit": 5000
+      },
+      {
+        "resource": "audit_log_streaming",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 15,
+        "limit": 15
+      },
+      {
+        "resource": "copilot_usage_records",
+        "requests_made": 0,
+        "quota_consumed": 0,
+        "final_remaining": 1750,
+        "limit": 1750
+      }
+    ]
+  },
+  "artifacts_list": [
+    ".downloaded-artifacts/activation",
+    ".downloaded-artifacts/usage",
+    "aw-prompts/prompt-import-tree.json",
+    "aw-prompts/prompt-template.txt",
+    "aw-prompts/prompt.txt",
+    "aw_info.json",
+    "base/.claude/skills/commit-and-pr/SKILL.md",
+    "base/.github/ISSUE_TEMPLATE/bug_report.yaml",
+    "base/.github/ISSUE_TEMPLATE/feature_request.md",
+    "base/.github/ISSUE_TEMPLATE.md",
+    "base/.github/RELEASE_DIGEST.md",
+    "base/.github/aw/actions-lock.json",
+    "base/.github/dependabot.yml",
+    "base/.github/quarkus-ecosystem-test",
+    "base/.github/scripts/validate-mermaid.mjs",
+    "base/.github/workflows/README.md",
+    "base/.github/workflows/agentics-maintenance.yml",
+    "base/.github/workflows/claude.yml",
+    "base/.github/workflows/diagram-bot.lock.yml",
+    "base/.github/workflows/diagram-bot.md",
+    "base/.github/workflows/doc-bot.lock.yml",
+    "base/.github/workflows/doc-bot.md",
+    "base/.github/workflows/formatter.yml",
+    "base/.github/workflows/guidelines-bot.lock.yml",
+    "base/.github/workflows/guidelines-bot.md",
+    "base/.github/workflows/pr-preview.yml",
+    "base/.github/workflows/pr-snapshot.yml",
+    "base/.github/workflows/quarkus-ecosystem-ci.yml",
+    "base/.github/workflows/quarkus-native.yml",
+    "base/.github/workflows/release-check.yml",
+    "base/.github/workflows/release-digest.yml",
+    "base/.github/workflows/spring-native.yml",
+    "base/.github/workflows/update-frontend-dependencies.yml",
+    "base/.github/workflows/update-since-tags.yml",
+    "base/.github/workflows/validation.yml",
+    "base/.github/workflows/warm-caches.yml",
+    "base/CLAUDE.md",
+    "github_rate_limits.jsonl",
+    "models.json",
+    "usage/activity/summary.json",
+    "usage/agent/token_usage.jsonl",
+    "usage/agent_usage.json",
+    "usage/detection/token_usage.jsonl",
+    "usage/github_rate_limits.jsonl"
+  ],
+  "job_details": null
+}

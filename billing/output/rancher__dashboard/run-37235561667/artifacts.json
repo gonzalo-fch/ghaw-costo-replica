@@ -1,0 +1,145 @@
+{
+  "total_count": 7,
+  "artifacts": [
+    {
+      "id": 11315735890,
+      "node_id": "MDg6QXJ0aWZhY3QxMTMxNTczNTg5MA==",
+      "name": "usage",
+      "size_in_bytes": 3936,
+      "url": "https://api.github.com/repos/rancher/dashboard/actions/artifacts/11315735890",
+      "archive_download_url": "https://api.github.com/repos/rancher/dashboard/actions/artifacts/11315735890/zip",
+      "expired": false,
+      "digest": "sha256:27a8cfdc042d465e5fa369f1b93ddc002f81838098e5d00727f63528969b7a7d",
+      "created_at": "2026-10-04T21:23:08Z",
+      "updated_at": "2026-10-04T21:23:08Z",
+      "expires_at": "2027-01-02T21:18:29Z",
+      "workflow_run": {
+        "id": 37235561667,
+        "repository_id": 198819992,
+        "head_repository_id": 198819992,
+        "head_branch": "master",
+        "head_sha": "3ee32042924d1caf841e1acab355ecd970294f91"
+      }
+    },
+    {
+      "id": 11315577277,
+      "node_id": "MDg6QXJ0aWZhY3QxMTMxNTU3NzI3Nw==",
+      "name": "safe-outputs-items",
+      "size_in_bytes": 301,
+      "url": "https://api.github.com/repos/rancher/dashboard/actions/artifacts/11315577277",
+      "archive_download_url": "https://api.github.com/repos/rancher/dashboard/actions/artifacts/11315577277/zip",
+      "expired": false,
+      "digest": "sha256:ee2d5017831695d580206efab9941881c927dbcb7b2d7778a97816cba9a7aab6",
+      "created_at": "2026-10-04T21:22:50Z",
+      "updated_at": "2026-10-04T21:22:50Z",
+      "expires_at": "2027-01-02T21:18:29Z",
+      "workflow_run": {
+        "id": 37235561667,
+        "repository_id": 198819992,
+        "head_repository_id": 198819992,
+        "head_branch": "master",
+        "head_sha": "3ee32042924d1caf841e1acab355ecd970294f91"
+      }
+    },
+    {
+      "id": 11315164168,
+      "node_id": "MDg6QXJ0aWZhY3QxMTMxNTE2NDE2OA==",
+      "name": "aic-usage-cache",
+      "size_in_bytes": 294,
+      "url": "https://api.github.com/repos/rancher/dashboard/actions/artifacts/11315164168",
+      "archive_download_url": "https://api.github.com/repos/rancher/dashboard/actions/artifacts/11315164168/zip",
+      "expired": false,
+      "digest": "sha256:b48ec8dddcaf5a225e6a47393dbc71e96ec54af4cff5cd7ee2b9164515b86e6a",
+      "created_at": "2026-10-04T21:23:11Z",
+      "updated_at": "2026-10-04T21:23:11Z",
+      "expires_at": "2026-10-11T21:23:10Z",
+      "workflow_run": {
+        "id": 37235561667,
+        "repository_id": 198819992,
+        "head_repository_id": 198819992,
+        "head_branch": "master",
+        "head_sha": "3ee32042924d1caf841e1acab355ecd970294f91"
+      }
+    },
+    {
+      "id": 11315073975,
+      "node_id": "MDg6QXJ0aWZhY3QxMTMxNTA3Mzk3NQ==",
+      "name": "agent",
+      "size_in_bytes": 577505,
+      "url": "https://api.github.com/repos/rancher/dashboard/actions/artifacts/11315073975",
+      "archive_download_url": "https://api.github.com/repos/rancher/dashboard/actions/artifacts/11315073975/zip",
+      "expired": false,
+      "digest": "sha256:bc2e68c03ac0c896ff57e6440e656cd437307f0ffda3c4cd8fc220b3b5d9fa2e",
+      "created_at": "2026-10-04T21:21:15Z",
+      "updated_at": "2026-10-04T21:21:15Z",
+      "expires_at": "2027-01-02T21:18:29Z",
+      "workflow_run": {
+        "id": 37235561667,
+        "repository_id": 198819992,
+        "head_repository_id": 198819992,
+        "head_branch": "master",
+        "head_sha": "3ee32042924d1caf841e1acab355ecd970294f91"
+      }
+    },
+    {
+      "id": 11314979279,
+      "node_id": "MDg6QXJ0aWZhY3QxMTMxNDk3OTI3OQ==",
+      "name": "detection",
+      "size_in_bytes": 19795,
+      "url": "https://api.github.com/repos/rancher/dashboard/actions/artifacts/11314979279",
+      "archive_download_url": "https://api.github.com/repos/rancher/dashboard/actions/artifacts/11314979279/zip",
+      "expired": false,
+      "digest": "sha256:4662583de6b06492e6874ad83b7c7017fdfb2e35d2630abb839ecfe02799f3a4",
+      "created_at": "2026-10-04T21:22:19Z",
+      "updated_at": "2026-10-04T21:22:19Z",
+      "expires_at": "2027-01-02T21:18:29Z",
+      "workflow_run": {
+        "id": 37235561667,
+        "repository_id": 198819992,
+        "head_repository_id": 198819992,
+        "head_branch": "master",
+        "head_sha": "3ee32042924d1caf841e1acab355ecd970294f91"
+      }
+    },
+    {
+      "id": 11314963998,
+      "node_id": "MDg6QXJ0aWZhY3QxMTMxNDk2Mzk5OA==",
+      "name": "activation",
+      "size_in_bytes": 313440,
+      "url": "https://api.github.com/repos/rancher/dashboard/actions/artifacts/11314963998",
+      "archive_download_url": "https://api.github.com/repos/rancher/dashboard/actions/artifacts/11314963998/zip",
+      "expired": false,
+      "digest": "sha256:e881f17fae11d9892aa058fa231cc574b7c99dbf0cdfca70acfea8fd197389dd",
+      "created_at": "2026-10-04T21:18:46Z",
+      "updated_at": "2026-10-04T21:18:46Z",
+      "expires_at": "2026-10-05T21:18:46Z",
+      "workflow_run": {
+        "id": 37235561667,
+        "repository_id": 198819992,
+        "head_repository_id": 198819992,
+        "head_branch": "master",
+        "head_sha": "3ee32042924d1caf841e1acab355ecd970294f91"
+      }
+    },
+    {
+      "id": 11314854703,
+      "node_id": "MDg6QXJ0aWZhY3QxMTMxNDg1NDcwMw==",
+      "name": "agent-output-fallback",
+      "size_in_bytes": 843,
+      "url": "https://api.github.com/repos/rancher/dashboard/actions/artifacts/11314854703",
+      "archive_download_url": "https://api.github.com/repos/rancher/dashboard/actions/artifacts/11314854703/zip",
+      "expired": false,
+      "digest": "sha256:a9798aa24e565ebafcd04944d721310c7515184d2393db45616c43792d2a4939",
+      "created_at": "2026-10-04T21:21:13Z",
+      "updated_at": "2026-10-04T21:21:13Z",
+      "expires_at": "2027-01-02T21:18:29Z",
+      "workflow_run": {
+        "id": 37235561667,
+        "repository_id": 198819992,
+        "head_repository_id": 198819992,
+        "head_branch": "master",
+        "head_sha": "3ee32042924d1caf841e1acab355ecd970294f91"
+      }
+    }
+  ]
+}

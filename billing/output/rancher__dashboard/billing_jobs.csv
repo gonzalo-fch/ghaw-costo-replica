@@ -1,0 +1,6 @@
+run_id,job_id,job_name,status,conclusion,started_at,completed_at,duration_seconds,runner_name,runner_labels_raw,runner_label_matched,runner_sku,rate_usd_per_min,ceil_minutes,actions_cost_usd_notional
+37235561667,111533833104,activation,completed,success,2026-10-04T21:18:32Z,2026-10-04T21:18:48Z,16.0,GitHub Actions 1002131462,"[""ubuntu-slim""]",ubuntu-slim,actions_linux_slim,0.002,1,0.002
+37235561667,111533893481,agent,completed,success,2026-10-04T21:18:53Z,2026-10-04T21:21:20Z,147.0,GitHub Actions 1002131464,"[""ubuntu-latest""]",ubuntu-latest,actions_linux,0.006,3,0.018000000000000002
+37235561667,111534390236,detection,completed,success,2026-10-04T21:21:23Z,2026-10-04T21:22:21Z,58.0,GitHub Actions 1002131465,"[""ubuntu-latest""]",ubuntu-latest,actions_linux,0.006,1,0.006
+37235561667,111534594184,safe_outputs,completed,success,2026-10-04T21:22:36Z,2026-10-04T21:22:52Z,16.0,GitHub Actions 1002131471,"[""ubuntu-slim""]",ubuntu-slim,actions_linux_slim,0.002,1,0.002
+37235561667,111534690755,conclusion,completed,success,2026-10-04T21:22:56Z,2026-10-04T21:23:16Z,20.0,GitHub Actions 1002131472,"[""ubuntu-slim""]",ubuntu-slim,actions_linux_slim,0.002,1,0.002

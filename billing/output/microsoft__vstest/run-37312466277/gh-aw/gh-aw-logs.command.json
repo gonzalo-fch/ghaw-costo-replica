@@ -1,0 +1,17 @@
+{
+  "args": [
+    "gh",
+    "aw",
+    "logs",
+    "--stdin",
+    "--repo",
+    "microsoft/vstest",
+    "--json",
+    "--output",
+    "billing/output/microsoft__vstest/run-37312466277/gh-aw",
+    "--artifacts",
+    "usage"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 13.088090620000003
+}

@@ -1,0 +1,223 @@
+{
+  "summary": {
+    "total_runs": 1,
+    "total_duration": "4.8m",
+    "total_aic": 20.58251,
+    "total_tokens": 8776,
+    "total_action_minutes": 5,
+    "total_turns": 0,
+    "total_errors": 0,
+    "total_warnings": 0,
+    "total_missing_tools": 0,
+    "total_missing_data": 0,
+    "total_safe_items": 0,
+    "total_driver_exit_failures": 0,
+    "total_agent_logic_failures": 0,
+    "total_episodes": 1,
+    "high_confidence_episodes": 1,
+    "total_github_api_calls": 10,
+    "engine_counts": {
+      "copilot": 1
+    }
+  },
+  "runs": [
+    {
+      "run_id": 37235561667,
+      "number": 208,
+      "workflow_name": "Daily Issue Grooming",
+      "workflow_path": ".github/workflows/daily-issue-grooming.lock.yml",
+      "agent": "copilot",
+      "engine": "GitHub Copilot CLI",
+      "engine_id": "copilot",
+      "status": "completed",
+      "conclusion": "success",
+      "classification": "baseline",
+      "duration": "4.8m",
+      "action_minutes": 5,
+      "token_usage": 8776,
+      "aic": 20.58251,
+      "ambient_context": {
+        "input_tokens": 6310,
+        "cached_tokens": 0
+      },
+      "created_at": "2026-10-04T21:18:29Z",
+      "started_at": "2026-10-04T21:18:29Z",
+      "updated_at": "2026-10-04T21:23:17Z",
+      "url": "https://github.com/rancher/dashboard/actions/runs/37235561667",
+      "logs_path": "billing/output/rancher__dashboard/run-37235561667/gh-aw/run-37235561667",
+      "event": "schedule",
+      "branch": "master",
+      "head_sha": "3ee32042924d1caf841e1acab355ecd970294f91",
+      "display_title": "Daily Issue Grooming",
+      "repository": "rancher/dashboard",
+      "organization": "rancher",
+      "ref": "refs/heads/master",
+      "sha": "3ee32042924d1caf841e1acab355ecd970294f91",
+      "actor": "marcelofukumoto",
+      "run_attempt": "1",
+      "event_name": "schedule",
+      "comparison": {
+        "baseline_found": false
+      },
+      "task_domain": {
+        "name": "issue_response",
+        "label": "Issue Response",
+        "reason": "The run is primarily interacting with issue, discussion, or comment threads."
+      },
+      "behavior_fingerprint": {
+        "execution_style": "directed",
+        "tool_breadth": "narrow",
+        "actuation_style": "read_only",
+        "resource_profile": "lean",
+        "dispatch_mode": "standalone",
+        "agentic_fraction": 0
+      },
+      "agentic_assessments": [
+        {
+          "kind": "overkill_for_agentic",
+          "severity": "low",
+          "summary": "This Issue Response run looks stable enough that deterministic automation may be a simpler fit.",
+          "evidence": "turns=0 tool_types=0 actuation=read_only",
+          "recommendation": "Consider whether a scripted rule or deterministic workflow step could replace this agentic path."
+        }
+      ],
+      "token_usage_summary": {
+        "total_input_tokens": 6322,
+        "total_output_tokens": 2454,
+        "total_cache_read_tokens": 268413,
+        "total_cache_write_tokens": 51041,
+        "total_requests": 7,
+        "total_duration_ms": 29291,
+        "total_response_bytes": 106474,
+        "cache_efficiency": 0,
+        "total_aic": 20.58251,
+        "ambient_context": {
+          "input_tokens": 6310,
+          "cached_tokens": 0
+        },
+        "by_model": {
+          "claude-sonnet-5": {
+            "provider": "copilot",
+            "input_tokens": 6322,
+            "output_tokens": 2454,
+            "cache_read_tokens": 268413,
+            "cache_write_tokens": 51041,
+            "requests": 7,
+            "duration_ms": 29291,
+            "response_bytes": 106474,
+            "aic": 20.58251
+          }
+        }
+      },
+      "github_api_calls": 10
+    }
+  ],
+  "episodes": [
+    {
+      "episode_id": "standalone:37235561667",
+      "kind": "standalone",
+      "confidence": "high",
+      "reasons": [
+        "no_shared_lineage_markers"
+      ],
+      "root_run_id": 37235561667,
+      "run_ids": [
+        37235561667
+      ],
+      "workflow_names": [
+        "Daily Issue Grooming"
+      ],
+      "primary_workflow": "Daily Issue Grooming",
+      "total_runs": 1,
+      "total_tokens": 8776,
+      "total_aic": 20.58251,
+      "total_duration": "4.8m",
+      "risky_node_count": 0,
+      "changed_node_count": 0,
+      "write_capable_node_count": 0,
+      "missing_tool_count": 0,
+      "mcp_failure_count": 0,
+      "blocked_request_count": 0,
+      "latest_success_fallback_count": 0,
+      "new_mcp_failure_run_count": 0,
+      "blocked_request_increase_run_count": 0,
+      "resource_heavy_node_count": 0,
+      "poor_control_node_count": 0,
+      "risk_distribution": "none",
+      "escalation_eligible": false,
+      "suggested_route": "workflow:Daily Issue Grooming",
+      "repository": "rancher/dashboard",
+      "organization": "rancher"
+    }
+  ],
+  "edges": [],
+  "mcp_tool_usage": {
+    "summary": null,
+    "servers": [
+      {
+        "server_name": "github",
+        "request_count": 89,
+        "tool_call_count": 89,
+        "total_input_size": 0,
+        "total_output_size": 0
+      },
+      {
+        "server_name": "safeoutputs",
+        "request_count": 1,
+        "tool_call_count": 1,
+        "total_input_size": 0,
+        "total_output_size": 0
+      }
+    ],
+    "tool_calls": null
+  },
+  "observability_insights": [
+    {
+      "category": "actuation",
+      "severity": "info",
+      "title": "Actuation mix summarized",
+      "summary": "Across 1 run(s), 0 executed write-capable safe outputs and 1 stayed read-only.",
+      "evidence": "write_runs=0 read_only_runs=1"
+    },
+    {
+      "category": "execution",
+      "severity": "info",
+      "title": "Cross-run log template patterns",
+      "summary": "Mined 1 distinct event templates across 6 pipeline stages from 1 events in 1 runs.",
+      "evidence": "finish=1"
+    }
+  ],
+  "firewall_log": {
+    "total_requests": 28,
+    "allowed_requests": 28,
+    "blocked_requests": 0,
+    "allowed_domains": [
+      "api.githubcopilot.com:443"
+    ],
+    "blocked_domains": null,
+    "requests_by_domain": {
+      "api.githubcopilot.com:443": {
+        "allowed": 28,
+        "blocked": 0
+      }
+    },
+    "by_workflow": {
+      "Daily Issue Grooming": {
+        "allowed_domains": [
+          "api.githubcopilot.com:443"
+        ],
+        "total_requests": 28,
+        "allowed_requests": 28,
+        "blocked_requests": 0,
+        "requests_by_domain": {
+          "api.githubcopilot.com:443": {
+            "allowed": 28,
+            "blocked": 0
+          }
+        }
+      }
+    }
+  },
+  "logs_location": "/home/gonzalo/Escritorio/Proyectos/gaw_billing/billing/output/rancher__dashboard/run-37235561667/gh-aw",
+  "message": "Only the usage artifact was downloaded. Use --artifacts all to download all artifacts, or a specific set such as --artifacts agent, or combinations such as --artifacts agent,firewall."
+}

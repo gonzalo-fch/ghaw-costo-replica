@@ -1,0 +1,11 @@
+# Dependencias del paquete de réplica de Billing.
+#
+# Los scripts (billing/*.py) usan únicamente la biblioteca estándar de Python 3.10+,
+# por lo que no requieren paquetes instalables vía pip.
+#
+# Requisitos externos (no instalables con pip):
+#   - GitHub CLI `gh` autenticado:  gh auth login
+#   - Extensión de gh-aw:            gh extension install github/gh-aw
+#
+# Opcional, solo para ejecutar el notebook:
+#   jupyter

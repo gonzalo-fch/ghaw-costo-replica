@@ -1,0 +1,1153 @@
+{
+  "total_count": 5,
+  "jobs": [
+    {
+      "id": 111533833104,
+      "run_id": 37235561667,
+      "workflow_name": "Daily Issue Grooming",
+      "head_branch": "master",
+      "run_url": "https://api.github.com/repos/rancher/dashboard/actions/runs/37235561667",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOC9nAmM8AAAAZ9-87kA",
+      "head_sha": "3ee32042924d1caf841e1acab355ecd970294f91",
+      "url": "https://api.github.com/repos/rancher/dashboard/actions/jobs/111533833104",
+      "html_url": "https://github.com/rancher/dashboard/actions/runs/37235561667/job/111533833104",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-04T21:18:29Z",
+      "started_at": "2026-10-04T21:18:32Z",
+      "completed_at": "2026-10-04T21:18:48Z",
+      "name": "activation",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-04T21:18:34Z",
+          "completed_at": "2026-10-04T21:18:35Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-04T21:18:35Z",
+          "completed_at": "2026-10-04T21:18:37Z"
+        },
+        {
+          "name": "Mask OTLP telemetry headers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-04T21:18:37Z",
+          "completed_at": "2026-10-04T21:18:37Z"
+        },
+        {
+          "name": "Generate agentic run info",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-04T21:18:37Z",
+          "completed_at": "2026-10-04T21:18:38Z"
+        },
+        {
+          "name": "Restore daily AIC usage cache",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-04T21:18:38Z",
+          "completed_at": "2026-10-04T21:18:38Z"
+        },
+        {
+          "name": "Restore daily AIC usage cache (artifact fallback)",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-04T21:18:38Z",
+          "completed_at": "2026-10-04T21:18:38Z"
+        },
+        {
+          "name": "Check daily workflow token guardrail",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-04T21:18:38Z",
+          "completed_at": "2026-10-04T21:18:42Z"
+        },
+        {
+          "name": "Check for OAuth tokens",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-04T21:18:42Z",
+          "completed_at": "2026-10-04T21:18:42Z"
+        },
+        {
+          "name": "Checkout .github and .agents folders",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-04T21:18:42Z",
+          "completed_at": "2026-10-04T21:18:44Z"
+        },
+        {
+          "name": "Save agent config folders for base branch restoration",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-04T21:18:44Z",
+          "completed_at": "2026-10-04T21:18:44Z"
+        },
+        {
+          "name": "Check workflow lock file",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-10-04T21:18:44Z",
+          "completed_at": "2026-10-04T21:18:44Z"
+        },
+        {
+          "name": "Check compile-agentic version",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-10-04T21:18:44Z",
+          "completed_at": "2026-10-04T21:18:45Z"
+        },
+        {
+          "name": "Log runtime features",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 13,
+          "started_at": "2026-10-04T21:18:45Z",
+          "completed_at": "2026-10-04T21:18:45Z"
+        },
+        {
+          "name": "Create prompt with built-in context",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-10-04T21:18:45Z",
+          "completed_at": "2026-10-04T21:18:45Z"
+        },
+        {
+          "name": "Interpolate variables and render templates",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-10-04T21:18:45Z",
+          "completed_at": "2026-10-04T21:18:45Z"
+        },
+        {
+          "name": "Substitute placeholders",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-10-04T21:18:45Z",
+          "completed_at": "2026-10-04T21:18:45Z"
+        },
+        {
+          "name": "Validate prompt placeholders",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-10-04T21:18:45Z",
+          "completed_at": "2026-10-04T21:18:45Z"
+        },
+        {
+          "name": "Print prompt",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-10-04T21:18:45Z",
+          "completed_at": "2026-10-04T21:18:45Z"
+        },
+        {
+          "name": "Stage prompt files for artifact upload",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-10-04T21:18:45Z",
+          "completed_at": "2026-10-04T21:18:45Z"
+        },
+        {
+          "name": "Upload activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-10-04T21:18:45Z",
+          "completed_at": "2026-10-04T21:18:46Z"
+        },
+        {
+          "name": "Post Checkout .github and .agents folders",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 39,
+          "started_at": "2026-10-04T21:18:46Z",
+          "completed_at": "2026-10-04T21:18:47Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 40,
+          "started_at": "2026-10-04T21:18:47Z",
+          "completed_at": "2026-10-04T21:18:47Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 41,
+          "started_at": "2026-10-04T21:18:47Z",
+          "completed_at": "2026-10-04T21:18:47Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/rancher/dashboard/check-runs/111533833104",
+      "labels": [
+        "ubuntu-slim"
+      ],
+      "runner_id": 1002131462,
+      "runner_name": "GitHub Actions 1002131462",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 111533893481,
+      "run_id": 37235561667,
+      "workflow_name": "Daily Issue Grooming",
+      "head_branch": "master",
+      "run_url": "https://api.github.com/repos/rancher/dashboard/actions/runs/37235561667",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOC9nAmM8AAAAZ9_AnaQ",
+      "head_sha": "3ee32042924d1caf841e1acab355ecd970294f91",
+      "url": "https://api.github.com/repos/rancher/dashboard/actions/jobs/111533893481",
+      "html_url": "https://github.com/rancher/dashboard/actions/runs/37235561667/job/111533893481",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-04T21:18:48Z",
+      "started_at": "2026-10-04T21:18:53Z",
+      "completed_at": "2026-10-04T21:21:20Z",
+      "name": "agent",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-04T21:18:54Z",
+          "completed_at": "2026-10-04T21:18:56Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-04T21:18:56Z",
+          "completed_at": "2026-10-04T21:18:58Z"
+        },
+        {
+          "name": "Set runtime paths",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-04T21:18:58Z",
+          "completed_at": "2026-10-04T21:18:58Z"
+        },
+        {
+          "name": "Mask OTLP telemetry headers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-04T21:18:58Z",
+          "completed_at": "2026-10-04T21:18:58Z"
+        },
+        {
+          "name": "Check OTLP telemetry configuration",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-04T21:18:58Z",
+          "completed_at": "2026-10-04T21:18:58Z"
+        },
+        {
+          "name": "Checkout repository",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-04T21:18:58Z",
+          "completed_at": "2026-10-04T21:19:01Z"
+        },
+        {
+          "name": "Create gh-aw temp directory",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-04T21:19:01Z",
+          "completed_at": "2026-10-04T21:19:01Z"
+        },
+        {
+          "name": "Configure gh CLI for GitHub Enterprise",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-04T21:19:01Z",
+          "completed_at": "2026-10-04T21:19:01Z"
+        },
+        {
+          "name": "Download activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-04T21:19:01Z",
+          "completed_at": "2026-10-04T21:19:02Z"
+        },
+        {
+          "name": "Configure Git credentials",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-04T21:19:02Z",
+          "completed_at": "2026-10-04T21:19:02Z"
+        },
+        {
+          "name": "Checkout PR branch",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 11,
+          "started_at": "2026-10-04T21:19:02Z",
+          "completed_at": "2026-10-04T21:19:02Z"
+        },
+        {
+          "name": "Install GitHub Copilot CLI",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-10-04T21:19:02Z",
+          "completed_at": "2026-10-04T21:19:13Z"
+        },
+        {
+          "name": "Install AWF binary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-10-04T21:19:13Z",
+          "completed_at": "2026-10-04T21:19:14Z"
+        },
+        {
+          "name": "Determine automatic lockdown mode for GitHub MCP Server",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-10-04T21:19:14Z",
+          "completed_at": "2026-10-04T21:19:14Z"
+        },
+        {
+          "name": "Parse integrity filter lists",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-10-04T21:19:14Z",
+          "completed_at": "2026-10-04T21:19:14Z"
+        },
+        {
+          "name": "Restore agent config folders from base branch",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 16,
+          "started_at": "2026-10-04T21:19:14Z",
+          "completed_at": "2026-10-04T21:19:14Z"
+        },
+        {
+          "name": "Restore inline sub-agents from activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-10-04T21:19:14Z",
+          "completed_at": "2026-10-04T21:19:14Z"
+        },
+        {
+          "name": "Restore inline skills from activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-10-04T21:19:14Z",
+          "completed_at": "2026-10-04T21:19:14Z"
+        },
+        {
+          "name": "Download container images",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-10-04T21:19:14Z",
+          "completed_at": "2026-10-04T21:19:26Z"
+        },
+        {
+          "name": "Prepare Safe Outputs Directories",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-10-04T21:19:26Z",
+          "completed_at": "2026-10-04T21:19:26Z"
+        },
+        {
+          "name": "Generate Safe Outputs Config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-10-04T21:19:26Z",
+          "completed_at": "2026-10-04T21:19:26Z"
+        },
+        {
+          "name": "Generate Safe Outputs Tools",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-10-04T21:19:26Z",
+          "completed_at": "2026-10-04T21:19:26Z"
+        },
+        {
+          "name": "Start MCP Gateway",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-10-04T21:19:26Z",
+          "completed_at": "2026-10-04T21:19:31Z"
+        },
+        {
+          "name": "Mount MCP servers as CLIs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 24,
+          "started_at": "2026-10-04T21:19:31Z",
+          "completed_at": "2026-10-04T21:19:32Z"
+        },
+        {
+          "name": "Clean credentials",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25,
+          "started_at": "2026-10-04T21:19:32Z",
+          "completed_at": "2026-10-04T21:19:32Z"
+        },
+        {
+          "name": "Audit pre-agent workspace",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 26,
+          "started_at": "2026-10-04T21:19:32Z",
+          "completed_at": "2026-10-04T21:19:32Z"
+        },
+        {
+          "name": "Execute GitHub Copilot CLI",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 27,
+          "started_at": "2026-10-04T21:19:32Z",
+          "completed_at": "2026-10-04T21:21:09Z"
+        },
+        {
+          "name": "Detect agent errors",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 28,
+          "started_at": "2026-10-04T21:21:09Z",
+          "completed_at": "2026-10-04T21:21:09Z"
+        },
+        {
+          "name": "Configure Git credentials",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 29,
+          "started_at": "2026-10-04T21:21:09Z",
+          "completed_at": "2026-10-04T21:21:09Z"
+        },
+        {
+          "name": "Copy Copilot session state files to logs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 30,
+          "started_at": "2026-10-04T21:21:09Z",
+          "completed_at": "2026-10-04T21:21:09Z"
+        },
+        {
+          "name": "Stop MCP Gateway",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 31,
+          "started_at": "2026-10-04T21:21:09Z",
+          "completed_at": "2026-10-04T21:21:10Z"
+        },
+        {
+          "name": "Redact secrets in logs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 32,
+          "started_at": "2026-10-04T21:21:10Z",
+          "completed_at": "2026-10-04T21:21:11Z"
+        },
+        {
+          "name": "Append agent step summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 33,
+          "started_at": "2026-10-04T21:21:11Z",
+          "completed_at": "2026-10-04T21:21:11Z"
+        },
+        {
+          "name": "Copy Safe Outputs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 34,
+          "started_at": "2026-10-04T21:21:11Z",
+          "completed_at": "2026-10-04T21:21:11Z"
+        },
+        {
+          "name": "Ingest agent output",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 35,
+          "started_at": "2026-10-04T21:21:11Z",
+          "completed_at": "2026-10-04T21:21:11Z"
+        },
+        {
+          "name": "Parse agent logs for step summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 36,
+          "started_at": "2026-10-04T21:21:11Z",
+          "completed_at": "2026-10-04T21:21:11Z"
+        },
+        {
+          "name": "Parse MCP Gateway logs for step summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 37,
+          "started_at": "2026-10-04T21:21:11Z",
+          "completed_at": "2026-10-04T21:21:11Z"
+        },
+        {
+          "name": "Print firewall logs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 38,
+          "started_at": "2026-10-04T21:21:11Z",
+          "completed_at": "2026-10-04T21:21:12Z"
+        },
+        {
+          "name": "Parse token usage for step summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 39,
+          "started_at": "2026-10-04T21:21:12Z",
+          "completed_at": "2026-10-04T21:21:12Z"
+        },
+        {
+          "name": "Print AWF reflect summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 40,
+          "started_at": "2026-10-04T21:21:12Z",
+          "completed_at": "2026-10-04T21:21:12Z"
+        },
+        {
+          "name": "Generate observability summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 41,
+          "started_at": "2026-10-04T21:21:12Z",
+          "completed_at": "2026-10-04T21:21:12Z"
+        },
+        {
+          "name": "Write agent output placeholder if missing",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 42,
+          "started_at": "2026-10-04T21:21:12Z",
+          "completed_at": "2026-10-04T21:21:12Z"
+        },
+        {
+          "name": "Upload agent output fallback artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 43,
+          "started_at": "2026-10-04T21:21:12Z",
+          "completed_at": "2026-10-04T21:21:14Z"
+        },
+        {
+          "name": "Upload agent artifacts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 44,
+          "started_at": "2026-10-04T21:21:14Z",
+          "completed_at": "2026-10-04T21:21:15Z"
+        },
+        {
+          "name": "Post Checkout repository",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 87,
+          "started_at": "2026-10-04T21:21:15Z",
+          "completed_at": "2026-10-04T21:21:16Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 88,
+          "started_at": "2026-10-04T21:21:16Z",
+          "completed_at": "2026-10-04T21:21:16Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 89,
+          "started_at": "2026-10-04T21:21:16Z",
+          "completed_at": "2026-10-04T21:21:16Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/rancher/dashboard/check-runs/111533893481",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1002131464,
+      "runner_name": "GitHub Actions 1002131464",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 111534390236,
+      "run_id": 37235561667,
+      "workflow_name": "Daily Issue Grooming",
+      "head_branch": "master",
+      "run_url": "https://api.github.com/repos/rancher/dashboard/actions/runs/37235561667",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOC9nAmM8AAAAZ9_e73A",
+      "head_sha": "3ee32042924d1caf841e1acab355ecd970294f91",
+      "url": "https://api.github.com/repos/rancher/dashboard/actions/jobs/111534390236",
+      "html_url": "https://github.com/rancher/dashboard/actions/runs/37235561667/job/111534390236",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-04T21:21:20Z",
+      "started_at": "2026-10-04T21:21:23Z",
+      "completed_at": "2026-10-04T21:22:21Z",
+      "name": "detection",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-04T21:21:24Z",
+          "completed_at": "2026-10-04T21:21:26Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-04T21:21:26Z",
+          "completed_at": "2026-10-04T21:21:28Z"
+        },
+        {
+          "name": "Download activation artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-04T21:21:28Z",
+          "completed_at": "2026-10-04T21:21:29Z"
+        },
+        {
+          "name": "Download agent output artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-04T21:21:29Z",
+          "completed_at": "2026-10-04T21:21:29Z"
+        },
+        {
+          "name": "Setup agent output environment variable",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-04T21:21:29Z",
+          "completed_at": "2026-10-04T21:21:29Z"
+        },
+        {
+          "name": "Checkout repository for patch context",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 6,
+          "started_at": "2026-10-04T21:21:29Z",
+          "completed_at": "2026-10-04T21:21:29Z"
+        },
+        {
+          "name": "Clean stale firewall files from agent artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-04T21:21:29Z",
+          "completed_at": "2026-10-04T21:21:29Z"
+        },
+        {
+          "name": "Download container images",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-04T21:21:29Z",
+          "completed_at": "2026-10-04T21:21:38Z"
+        },
+        {
+          "name": "Check if detection needed",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-04T21:21:38Z",
+          "completed_at": "2026-10-04T21:21:38Z"
+        },
+        {
+          "name": "Clear MCP Config for detection",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-04T21:21:38Z",
+          "completed_at": "2026-10-04T21:21:38Z"
+        },
+        {
+          "name": "Prepare threat detection files",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-10-04T21:21:38Z",
+          "completed_at": "2026-10-04T21:21:38Z"
+        },
+        {
+          "name": "Setup threat detection",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-10-04T21:21:38Z",
+          "completed_at": "2026-10-04T21:21:38Z"
+        },
+        {
+          "name": "Ensure threat-detection directory and log",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-10-04T21:21:38Z",
+          "completed_at": "2026-10-04T21:21:38Z"
+        },
+        {
+          "name": "Install AWF binary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-10-04T21:21:38Z",
+          "completed_at": "2026-10-04T21:21:39Z"
+        },
+        {
+          "name": "Setup Node.js",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-10-04T21:21:39Z",
+          "completed_at": "2026-10-04T21:21:40Z"
+        },
+        {
+          "name": "Install GitHub Copilot CLI",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-10-04T21:21:40Z",
+          "completed_at": "2026-10-04T21:21:47Z"
+        },
+        {
+          "name": "Install threat-detect binary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-10-04T21:21:47Z",
+          "completed_at": "2026-10-04T21:21:47Z"
+        },
+        {
+          "name": "Execute threat detection with AWF",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-10-04T21:21:47Z",
+          "completed_at": "2026-10-04T21:22:18Z"
+        },
+        {
+          "name": "Render detection log",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-10-04T21:22:18Z",
+          "completed_at": "2026-10-04T21:22:18Z"
+        },
+        {
+          "name": "Copy detection firewall logs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-10-04T21:22:18Z",
+          "completed_at": "2026-10-04T21:22:18Z"
+        },
+        {
+          "name": "Upload threat detection artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-10-04T21:22:18Z",
+          "completed_at": "2026-10-04T21:22:19Z"
+        },
+        {
+          "name": "Parse threat detection token usage for step summary",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 22,
+          "started_at": "2026-10-04T21:22:19Z",
+          "completed_at": "2026-10-04T21:22:19Z"
+        },
+        {
+          "name": "Conclude threat detection",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23,
+          "started_at": "2026-10-04T21:22:19Z",
+          "completed_at": "2026-10-04T21:22:19Z"
+        },
+        {
+          "name": "Post Setup Node.js",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 45,
+          "started_at": "2026-10-04T21:22:19Z",
+          "completed_at": "2026-10-04T21:22:19Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 46,
+          "started_at": "2026-10-04T21:22:19Z",
+          "completed_at": "2026-10-04T21:22:19Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 47,
+          "started_at": "2026-10-04T21:22:19Z",
+          "completed_at": "2026-10-04T21:22:19Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/rancher/dashboard/check-runs/111534390236",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1002131465,
+      "runner_name": "GitHub Actions 1002131465",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 111534594184,
+      "run_id": 37235561667,
+      "workflow_name": "Daily Issue Grooming",
+      "head_branch": "master",
+      "run_url": "https://api.github.com/repos/rancher/dashboard/actions/runs/37235561667",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOC9nAmM8AAAAZ9_rYiA",
+      "head_sha": "3ee32042924d1caf841e1acab355ecd970294f91",
+      "url": "https://api.github.com/repos/rancher/dashboard/actions/jobs/111534594184",
+      "html_url": "https://github.com/rancher/dashboard/actions/runs/37235561667/job/111534594184",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-04T21:22:21Z",
+      "started_at": "2026-10-04T21:22:36Z",
+      "completed_at": "2026-10-04T21:22:52Z",
+      "name": "safe_outputs",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-04T21:22:39Z",
+          "completed_at": "2026-10-04T21:22:43Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-04T21:22:43Z",
+          "completed_at": "2026-10-04T21:22:46Z"
+        },
+        {
+          "name": "Mask OTLP telemetry headers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-04T21:22:46Z",
+          "completed_at": "2026-10-04T21:22:46Z"
+        },
+        {
+          "name": "Download agent output artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-04T21:22:46Z",
+          "completed_at": "2026-10-04T21:22:48Z"
+        },
+        {
+          "name": "Setup agent output environment variable",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-04T21:22:48Z",
+          "completed_at": "2026-10-04T21:22:48Z"
+        },
+        {
+          "name": "Configure GH_HOST for enterprise compatibility",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-04T21:22:48Z",
+          "completed_at": "2026-10-04T21:22:48Z"
+        },
+        {
+          "name": "Process Safe Outputs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-04T21:22:48Z",
+          "completed_at": "2026-10-04T21:22:49Z"
+        },
+        {
+          "name": "Upload Safe Outputs Items",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-04T21:22:49Z",
+          "completed_at": "2026-10-04T21:22:50Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-10-04T21:22:50Z",
+          "completed_at": "2026-10-04T21:22:50Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-10-04T21:22:50Z",
+          "completed_at": "2026-10-04T21:22:50Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/rancher/dashboard/check-runs/111534594184",
+      "labels": [
+        "ubuntu-slim"
+      ],
+      "runner_id": 1002131471,
+      "runner_name": "GitHub Actions 1002131471",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 111534690755,
+      "run_id": 37235561667,
+      "workflow_name": "Daily Issue Grooming",
+      "head_branch": "master",
+      "run_url": "https://api.github.com/repos/rancher/dashboard/actions/runs/37235561667",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOC9nAmM8AAAAZ9_xRww",
+      "head_sha": "3ee32042924d1caf841e1acab355ecd970294f91",
+      "url": "https://api.github.com/repos/rancher/dashboard/actions/jobs/111534690755",
+      "html_url": "https://github.com/rancher/dashboard/actions/runs/37235561667/job/111534690755",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-04T21:22:52Z",
+      "started_at": "2026-10-04T21:22:56Z",
+      "completed_at": "2026-10-04T21:23:16Z",
+      "name": "conclusion",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-04T21:22:57Z",
+          "completed_at": "2026-10-04T21:23:00Z"
+        },
+        {
+          "name": "Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-04T21:23:00Z",
+          "completed_at": "2026-10-04T21:23:03Z"
+        },
+        {
+          "name": "Download agent output artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-04T21:23:03Z",
+          "completed_at": "2026-10-04T21:23:04Z"
+        },
+        {
+          "name": "Setup agent output environment variable",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-04T21:23:04Z",
+          "completed_at": "2026-10-04T21:23:04Z"
+        },
+        {
+          "name": "Download detection artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-04T21:23:04Z",
+          "completed_at": "2026-10-04T21:23:05Z"
+        },
+        {
+          "name": "Download Safe Outputs Items Manifest",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-04T21:23:05Z",
+          "completed_at": "2026-10-04T21:23:07Z"
+        },
+        {
+          "name": "Collect usage artifact files",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-04T21:23:07Z",
+          "completed_at": "2026-10-04T21:23:07Z"
+        },
+        {
+          "name": "Upload usage artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-04T21:23:07Z",
+          "completed_at": "2026-10-04T21:23:08Z"
+        },
+        {
+          "name": "Restore daily AIC usage cache",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-04T21:23:08Z",
+          "completed_at": "2026-10-04T21:23:09Z"
+        },
+        {
+          "name": "Write daily AIC usage cache entry",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-04T21:23:09Z",
+          "completed_at": "2026-10-04T21:23:09Z"
+        },
+        {
+          "name": "Save daily AIC usage cache",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-10-04T21:23:09Z",
+          "completed_at": "2026-10-04T21:23:10Z"
+        },
+        {
+          "name": "Upload daily AIC usage cache artifact",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-10-04T21:23:10Z",
+          "completed_at": "2026-10-04T21:23:11Z"
+        },
+        {
+          "name": "Process no-op messages",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-10-04T21:23:11Z",
+          "completed_at": "2026-10-04T21:23:12Z"
+        },
+        {
+          "name": "Log detection run",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 14,
+          "started_at": "2026-10-04T21:23:12Z",
+          "completed_at": "2026-10-04T21:23:12Z"
+        },
+        {
+          "name": "Record missing tool",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 15,
+          "started_at": "2026-10-04T21:23:12Z",
+          "completed_at": "2026-10-04T21:23:12Z"
+        },
+        {
+          "name": "Record incomplete",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 16,
+          "started_at": "2026-10-04T21:23:12Z",
+          "completed_at": "2026-10-04T21:23:12Z"
+        },
+        {
+          "name": "Handle agent failure",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-10-04T21:23:12Z",
+          "completed_at": "2026-10-04T21:23:12Z"
+        },
+        {
+          "name": "Report failed jobs",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-10-04T21:23:12Z",
+          "completed_at": "2026-10-04T21:23:14Z"
+        },
+        {
+          "name": "Post Setup Scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 36,
+          "started_at": "2026-10-04T21:23:14Z",
+          "completed_at": "2026-10-04T21:23:14Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 37,
+          "started_at": "2026-10-04T21:23:14Z",
+          "completed_at": "2026-10-04T21:23:14Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/rancher/dashboard/check-runs/111534690755",
+      "labels": [
+        "ubuntu-slim"
+      ],
+      "runner_id": 1002131472,
+      "runner_name": "GitHub Actions 1002131472",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

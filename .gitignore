@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Preparación de reuniones (local, no se sube al repo)
+meetings/
+
+# Paper / informe (local, no se sube al repo)
+paper/
+
+# Cache local del dataset HF pavtch/GHAW-H (reproducible, ~75MB)
+billing/dataset_cache/
+
+billing/docs/REUNION_RUN_36728232182.md
+
+# Logs generados por la extensión gh-aw (local)
+.github/aw/

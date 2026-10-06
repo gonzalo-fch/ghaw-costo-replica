@@ -1,0 +1,17 @@
+{
+  "args": [
+    "gh",
+    "aw",
+    "logs",
+    "--stdin",
+    "--repo",
+    "rancher/dashboard",
+    "--json",
+    "--output",
+    "billing/output/rancher__dashboard/run-37235561667/gh-aw",
+    "--artifacts",
+    "usage"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 10.363686299999245
+}

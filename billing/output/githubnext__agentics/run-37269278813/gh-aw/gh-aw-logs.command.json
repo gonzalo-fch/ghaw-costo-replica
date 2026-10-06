@@ -1,0 +1,17 @@
+{
+  "args": [
+    "gh",
+    "aw",
+    "logs",
+    "--stdin",
+    "--repo",
+    "githubnext/agentics",
+    "--json",
+    "--output",
+    "billing/output/githubnext__agentics/run-37269278813/gh-aw",
+    "--artifacts",
+    "usage"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 11.062338403999092
+}
