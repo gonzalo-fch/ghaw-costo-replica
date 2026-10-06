@@ -68,48 +68,83 @@ gaw_billing/
         └── <owner>__<repo>/         # Evidencia cruda + CSV por repositorio
 ```
 
-## Requisitos
+## Cómo reproducir (paso a paso)
 
-- Python 3.10+ (solo biblioteca estándar).
-- GitHub CLI `gh` autenticado: `gh auth login`.
-- Extensión de gh-aw: `gh extension install github/gh-aw`.
+### Requisitos previos
 
-## Reproducción
+- **Python 3.10+** (los scripts usan solo la biblioteca estándar).
+- **git** (para clonar el repositorio).
+- Solo para el paso 3 (re-extracción): **GitHub CLI `gh`** y la extensión **`gh-aw`**.
 
-**Punto de entrada (datos conservados).** La reproducción de los resultados comienza
-desde los datos ya incluidos en el repositorio:
-
-```bash
-python billing/merge_billing.py        # consolida billing/output/<repo>/billing_runs.csv
-python billing/summarize_results.py    # reproduce las tablas y métricas del informe
-```
-
-No requiere red ni autenticación. Produce `billing/output/billing_runs_all.csv`,
-`billing/output/billing_jobs_all.csv` y `billing/output/resumen_resultados.md`.
-
-**Re-extracción desde la fuente (opcional).** Regenerar los datos desde cero requiere
-`gh` autenticado y la extensión `gh-aw`; la primera ejecución descarga y cachea el
-dataset GHAW-H (~75 MB):
+### 1. Clonar el repositorio
 
 ```bash
-python billing/from_dataset_to_billing.py --repo vaadin/flow --run 36728232182
-python billing/from_dataset_to_billing.py --repo microsoft/vstest --run 37312466277
-python billing/from_dataset_to_billing.py --repo microsoft/vstest --run 37328625151
-python billing/from_dataset_to_billing.py --repo githubnext/agentics --run 37269278813
-python billing/from_dataset_to_billing.py --repo rancher/dashboard --run 37235561667
-
-python billing/merge_billing.py
-python billing/summarize_results.py
+git clone https://github.com/gonzalo-fch/ghaw-costo-replica.git
+cd ghaw-costo-replica
 ```
 
-Salidas por repositorio en `billing/output/<owner>__<repo>/`: `billing_runs.csv`
-(nivel run), `billing_jobs.csv` (nivel job) y la evidencia cruda por run.
+### 2. Reproducir los resultados desde los datos conservados (sin red)
 
-> **Restricciones de reproducibilidad.** La re-extracción depende de la API de GitHub y
-> de la retención de artefactos (≈90 días), por lo que el AIC podría no estar disponible
-> para runs antiguos. **Ningún resultado presentado se ve afectado**, porque la evidencia
-> cruda de los cinco casos está conservada en el repositorio y permite reproducir las
-> métricas sin re-extraer.
+El repositorio ya incluye la evidencia cruda de los cinco casos, así que este paso **no
+requiere red ni autenticación**:
+
+```bash
+python3 billing/merge_billing.py       # junta los CSV de cada repositorio
+python3 billing/summarize_results.py   # genera las métricas y tablas del informe
+```
+
+Salidas:
+
+- `billing/output/billing_runs_all.csv` — resultados a nivel run (5 casos).
+- `billing/output/billing_jobs_all.csv` — resultados a nivel job (29 jobs).
+- `billing/output/resumen_resultados.md` — tablas y métricas del informe: casos y
+  tiempo de extracción, anatomía del consumo de IA y RQ3 por categoría de tarea.
+
+### 3. (Opcional) Re-extraer los datos desde la fuente
+
+Requiere `gh` autenticado y la extensión `gh-aw`:
+
+```bash
+gh auth login
+gh extension install github/gh-aw
+```
+
+Luego se extrae cada caso del conjunto (la primera ejecución descarga y cachea el
+dataset GHAW-H, ~75 MB):
+
+```bash
+python3 billing/from_dataset_to_billing.py --repo vaadin/flow --run 36728232182
+python3 billing/from_dataset_to_billing.py --repo microsoft/vstest --run 37312466277
+python3 billing/from_dataset_to_billing.py --repo microsoft/vstest --run 37328625151
+python3 billing/from_dataset_to_billing.py --repo githubnext/agentics --run 37269278813
+python3 billing/from_dataset_to_billing.py --repo rancher/dashboard --run 37235561667
+```
+
+Y se vuelven a consolidar y resumir:
+
+```bash
+python3 billing/merge_billing.py
+python3 billing/summarize_results.py
+```
+
+Cada comando escribe, por repositorio, en `billing/output/<owner>__<repo>/`:
+`billing_runs.csv` (nivel run), `billing_jobs.csv` (nivel job) y la evidencia cruda del run.
+
+### 4. Alternativa: extractor directo por run
+
+```bash
+python3 billing/extract_run_billing.py --repo vaadin/flow 36728232182
+```
+
+### Notas
+
+- El flujo `from_dataset_to_billing.py` **acumula** por repositorio: si lo corres dos
+  veces para `microsoft/vstest`, conserva ambos runs (no se pisan).
+- **Restricciones:** la re-extracción depende de la API de GitHub y de la retención de
+  artefactos (≈90 días), por lo que el AIC podría no estar disponible en runs antiguos.
+  **Ningún resultado del informe se ve afectado**, porque la evidencia está conservada.
+- Si solo necesitas el componente de GitHub Actions (sin AIC), usa `--skip-ghaw` con
+  `extract_run_billing.py`.
 
 ## Procedencia de los datos
 
@@ -161,7 +196,7 @@ El paquete es parcial y se ampliará durante el desarrollo de la investigación.
 ## Documentación
 
 - [`billing/docs/DOCUMENTACION_BILLING.md`](billing/docs/DOCUMENTACION_BILLING.md):
-  procedencia de cada columna, precios, disponibilidad de datos, FAQ y checklist.
+  procedencia de cada columna, precios, disponibilidad de datos y checklist.
 - [`billing/README.md`](billing/README.md): resumen del módulo y uso.
 
 ## Notas metodológicas
