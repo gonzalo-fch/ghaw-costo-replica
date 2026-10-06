@@ -47,7 +47,6 @@ Los resultados completos están en `billing/output/billing_runs_all.csv` (nivel 
 
 ```
 gaw_billing/
-├── LICENSE                          # Licencia del código y la documentación
 ├── requirements.txt                 # Dependencias (solo biblioteca estándar + gh/gh-aw)
 ├── README.md                        # Este archivo
 └── billing/
@@ -207,8 +206,3 @@ El paquete es parcial y se ampliará durante el desarrollo de la investigación.
   (`actions_cost_usd_notional`).
 - `aic = null` significa **sin dato**, nunca costo cero.
 - No se redondea ningún valor antes de guardarlo en el CSV.
-
-## Licencia
-
-Código y documentación bajo licencia **MIT** (ver [`LICENSE`](LICENSE)). La evidencia
-cruda pertenece a los repositorios de origen; el dataset GHAW-H conserva su propia licencia.
