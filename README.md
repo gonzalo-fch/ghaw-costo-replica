@@ -5,9 +5,7 @@ en GitHub Agentic Workflows"** (Gonzalo Caniupán y Camilo Ñanco, Universidad d
 La Frontera).
 
 Este repositorio es el **instrumento de medición** y el **paquete de réplica** de la
-Etapa 2. Permite responder, para cada ejecución agéntica:
-
-> **¿Cuánto costó este run y de dónde salió cada número?**
+Etapa 2.
 
 ## Preguntas de investigación
 
@@ -55,7 +53,6 @@ gaw_billing/
     ├── README.md                    # Detalle del módulo de billing
     ├── docs/
     │   ├── DOCUMENTACION_BILLING.md # Documento principal y unificado
-    │   └── REUNION_*.md             # Notas locales (ignoradas por git)
     ├── extract_run_billing.py       # Extractor trazable (Actions API + gh-aw)
     ├── extract_run_billing.ipynb    # Versión notebook, paso a paso
     ├── from_dataset_to_billing.py   # Flujo dataset GHAW-H -> run -> billing
