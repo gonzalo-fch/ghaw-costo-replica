@@ -105,9 +105,10 @@ Salidas por repositorio en `billing/output/<owner>__<repo>/`: `billing_runs.csv`
 (nivel run), `billing_jobs.csv` (nivel job) y la evidencia cruda por run.
 
 > **Restricciones de reproducibilidad.** La re-extracción depende de la API de GitHub y
-> de la retención de artefactos (≈90 días), por lo que el AIC puede no estar disponible
-> para runs antiguos. La evidencia de los cinco casos está conservada en el repositorio,
-> de modo que los resultados pueden reproducirse sin re-extraer.
+> de la retención de artefactos (≈90 días), por lo que el AIC podría no estar disponible
+> para runs antiguos. **Ningún resultado presentado se ve afectado**, porque la evidencia
+> cruda de los cinco casos está conservada en el repositorio y permite reproducir las
+> métricas sin re-extraer.
 
 ## Procedencia de los datos
 
@@ -125,6 +126,9 @@ Salidas por repositorio en `billing/output/<owner>__<repo>/`: `billing_runs.csv`
   unidad superior × tarifa del SKU); `C_IA = AIC × 0,01`; `C_run = C_Actions + C_IA`.
   No se redondea ningún valor antes de guardarlo (detalle en
   `billing/docs/DOCUMENTACION_BILLING.md`).
+- **Clasificación por tarea (RQ3):** la categoría de cada run se asigna **manualmente**
+  en `billing/task_categories.csv` a partir del propósito declarado en el `.md`. Esta
+  etapa usa un único codificador; queda pendiente la verificación por un segundo codificador.
 
 ## Resultados por pregunta de investigación
 

@@ -32,7 +32,7 @@ ejecuciones de cuatro repositorios (ver el `README.md` de la raíz).
 | [`extract_run_billing.ipynb`](extract_run_billing.ipynb) | **Versión didáctica** del motor, paso a paso (mismo cálculo). |
 | [`merge_billing.py`](merge_billing.py) | **Consolidador**: junta los CSV de todos los repositorios en `billing_runs_all.csv` y `billing_jobs_all.csv`. |
 | [`summarize_results.py`](summarize_results.py) | **Análisis**: calcula las métricas y la tabla de RQ1–RQ3 a partir de los datos conservados. |
-| [`task_categories.csv`](task_categories.csv) | Mapa `run → categoría de tarea` usado por el análisis (RQ3). |
+| [`task_categories.csv`](task_categories.csv) | Mapa `run → categoría de tarea` (asignación manual en esta etapa) usado por el análisis (RQ3). |
 | `output/<owner>__<repo>/` | Evidencia cruda por run (run/jobs/timing/artifacts + gh-aw) y `billing_runs.csv` / `billing_jobs.csv`. |
 
 > En una frase: `from_dataset_to_billing.py` **encuentra** el run y lo **factura**;
