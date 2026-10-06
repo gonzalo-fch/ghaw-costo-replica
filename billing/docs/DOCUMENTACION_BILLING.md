@@ -110,7 +110,7 @@ flowchart TD
 
 ## 5. Proceso de obtención de datos
 
-### 5.1 ¿Hay web scraping? No
+### 5.1 Origen de los datos
 
 Todo sale de **APIs autenticadas**:
 - **GitHub REST API** vía `gh api`.
@@ -334,7 +334,7 @@ Detalle por request en `usage/<agent|detection|evals>/token_usage.jsonl` (guion 
 cada registro trae `input_tokens`, `output_tokens`, `cache_*_tokens`, `model`,
 `ai_credits_this_response`, `ai_credits_total`.
 
-> ⚠️ **Hallazgo de trazabilidad:** `run_summary.total_aic` (canónico) puede **no coincidir**
+>  **Hallazgo de trazabilidad:** `run_summary.total_aic` (canónico) puede **no coincidir**
 > con la suma de `ai_credits_this_response`. Ej.: `vaadin/flow` → `45.16788` vs `71.26752`
 > (`github/gh-aw`, gpt-5.4, sí coinciden). Se guardan **ambos** (`aic` y `aic_from_records`).
 
@@ -452,7 +452,7 @@ A continuación se detalla uno de ellos para ilustrar la estructura de la eviden
 | `reasoning_tokens` | `0` |
 | `ai_request_count` | `14` |
 | `ai_models` | `claude-sonnet-5` (anthropic) |
-| `aic_from_records` | `71.26752` ⚠️ |
+| `aic_from_records` | `71.26752`  |
 | `estimated_total_cost_usd` | `0.4896788` |
 
 ### 9.2 Jobs del run

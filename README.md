@@ -1,8 +1,8 @@
-# gaw_billing — Paquete de réplica (Etapa 2)
+# Paquete de réplica (Etapa 2)
 
-Trabajo de **Billing** del proyecto **"¿Cuánto cuesta la automatización? Un estudio
-sobre la anatomía del costo de GitHub Agentic Workflows"** (Gonzalo Caniupán y Camilo
-Ñanco, Universidad de La Frontera).
+Trabajo de medición de costos (**Billing**) del proyecto de investigación **"¿Cuánto cuesta la
+automatización? Un estudio sobre la anatomía del costo de GitHub Agentic Workflows"**,
+desarrollado por Gonzalo Caniupán y Camilo Ñanco en la Universidad de La Frontera.
 
 Este repositorio es el **instrumento de medición** y el **paquete de réplica** de la
 Etapa 2.
@@ -23,8 +23,6 @@ El costo total tiene dos componentes independientes:
 1. **GitHub Actions minutes** (cómputo del runner).
 2. **Inferencia de IA**, medida por gh-aw como **AI Credits (AIC)** (`1 AIC = 0,01 USD`).
 
-Regla de oro del proyecto: **no dar por bueno un número sin poder indicar de dónde
-viene, cómo se obtuvo y qué transformación recibió.**
 
 ## Conjunto de casos (resultados preliminares)
 

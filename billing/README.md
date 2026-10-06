@@ -1,4 +1,4 @@
-# Billing — instrumento de medición de costos (trazable)
+# Billing — Medición de costos 
 
 Este directorio contiene el módulo de **Billing** del proyecto sobre GitHub Agentic
 Workflows (gh-aw): la extracción y el cálculo de costos de ejecuciones reales.
