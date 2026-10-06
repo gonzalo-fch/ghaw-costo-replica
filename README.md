@@ -52,7 +52,7 @@ gaw_billing/
 └── billing/
     ├── README.md                    # Detalle del módulo de billing
     ├── docs/
-    │   ├── DOCUMENTACION_BILLING.md # Documento principal y unificado
+    │   └── DOCUMENTACION_BILLING.md # Documento principal y unificado
     ├── extract_run_billing.py       # Extractor trazable (Actions API + gh-aw)
     ├── extract_run_billing.ipynb    # Versión notebook, paso a paso
     ├── from_dataset_to_billing.py   # Flujo dataset GHAW-H -> run -> billing

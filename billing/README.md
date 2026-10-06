@@ -11,11 +11,7 @@ Workflows (gh-aw): la extracción y el cálculo de costos de ejecuciones reales.
 
 ## Objetivo del módulo
 
-Ser el **instrumento de medición** que responda, para cada run:
-
-> **"¿Cuánto costó este run y de dónde salió cada número?"**
-
-El costo total tiene dos componentes independientes:
+El módulo calcula, para cada ejecución, dos componentes independientes del costo:
 
 1. **GitHub Actions minutes** (cómputo del runner).
 2. **Inferencia de IA**, medida por gh-aw como **AI Credits (AIC)** (`1 AIC = 0,01 USD`).

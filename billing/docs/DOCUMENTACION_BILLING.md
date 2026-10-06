@@ -21,12 +21,9 @@ Preguntas de investigación (RQ) de esta etapa:
 El instrumento registra además otros campos (duración, jobs, tokens, modelo,
 `conclusion`) que permiten abordar preguntas adicionales en etapas posteriores.
 
-**Este módulo de billing** es el **instrumento de medición** para responderlas. Para
-cada run agéntico debe poder responder:
-
-> **"¿Cuánto costó este run y de dónde salió cada número?"**
-
-El costo total (según gh-aw) tiene **dos componentes independientes**:
+**Este módulo de billing** es el **instrumento de medición** para responderlas,
+calculando para cada run el costo y su procedencia. El costo total (según gh-aw) tiene
+**dos componentes independientes**:
 
 1. **GitHub Actions minutes** (compute del runner).
 2. **Inferencia de IA**, medida por gh-aw como **AI Credits (AIC)**.
@@ -546,59 +543,8 @@ En consecuencia:
 
 ---
 
-## 11. Conceptos y dudas resueltas (FAQ)
 
-### 11.1 Actions nocional vs facturado
-
-- `actions_cost_usd_notional` = **precio de lista** (`Σ ceil(min) × tarifa`). Útil para comparar.
-- `actions_cost_usd_actual` = lo **realmente facturado**: `0` en repos públicos, nocional en privados.
-- "SKU" = *Stock Keeping Unit*, el identificador de precio de GitHub (p. ej. `actions_linux`).
-
-### 11.2 ¿Qué es AIC?
-
-- **AI Credits**: unidad de costo de inferencia de gh-aw. `1 AIC = 0.01 USD` (definición oficial).
-- `aic` = total de AIC; `aic_usd = aic × 0.01`.
-
-### 11.3 ¿Por qué el total estimado es un poco más alto?
-
-`estimated_total_cost_usd = actions_cost_usd_notional + aic_usd`.
-En el caso de referencia (`36728232182`): `0.038 + 0.4516788 = 0.4896788`. Es más alto porque **suma los minutos de Actions (nocional)** al costo de inferencia; y es mayor que lo facturado en un público (donde Actions = 0). Los decimales largos son de punto flotante; no se redondea.
-
-### 11.4 ¿El modelo es un campo obtenido o una inferencia?
-
-**Obtenido** del artefacto `usage` (`token_usage_summary.by_model`, `agent_usage.json.primary_model`, y por request en `token_usage.jsonl`). No se infiere.
-
-### 11.5 ¿Por qué hay tokens de entrada y de salida?
-
-Porque los LLM cobran **distinto** por `input` (prompt, herramientas, historial, contexto) y `output` (lo generado), y además por `cache_read`/`cache_write`. Se necesitan todos para reproducir la fórmula de AIC.
-
-### 11.6 ¿Hace falta descargar los `.md` y `.lock.yml`?
-
-Para **billing, no**. Solo sirven para **identificar el workflow** y ubicar sus runs por `path`. El dataset ya los contiene; del `.md` se deriva el `.lock.yml`. (`gh aw logs` trae una copia en `base/` como subproducto.)
-
-### 11.7 Motor `codex` vs modelo `claude`
-
-Son conceptos distintos (motor = runtime; modelo = LLM). El dataset declara `codex`, pero el run real usó `claude`. Es un **desfase snapshot vs commit**, no un uso conjunto. Ver sección 9.3.
-
-### 11.8 `dataset_cache/`
-
-Caché **local** de las configs del dataset HF (`repository.json`, `source_markdown_file_snapshot.json`, ~72 MB). El endpoint `/rows` **no soporta `where`**, así que se pagina y cachea. Está **gitignored**.
-
-### 11.9 `actions_billable_by_os_json`
-
-Del **timing API**: `billable.<OS>.total_ms` (medida oficial de GitHub de minutos facturables por SO). Da `0` en públicos/sin acceso de facturación; por eso **no** se usa como fuente del costo.
-
-### 11.10 Lado Actions vs lado inferencia
-
-Ver tabla en sección 3. Actions = compute (GitHub); inferencia = tokens del modelo (proveedor). Fuentes, unidades y condiciones de disponibilidad distintas.
-
-### 11.11 Razón y utilidad de `audit/`
-
-`gh aw audit <run> --json --output <dir>` produce un **reporte de diagnóstico**: `audit.json` (overview, `metrics.action_minutes`, behavior fingerprint, key findings, recomendaciones, firewall) + logs + `run_summary.json`. Es un **comando explícito**, no parte del run, y no es la fuente primaria del billing.
-
----
-
-## 12. Errores corregidos del código anterior
+## 11. Errores corregidos del código anterior
 
 | Elemento anterior | Problema | Corrección |
 | --- | --- | --- |
@@ -611,7 +557,7 @@ Ver tabla en sección 3. Actions = compute (GitHub); inferencia = tokens del mod
 
 ---
 
-## 13. Precisión numérica
+## 12. Precisión numérica
 
 - Guardar **todos los decimales** de la fuente (p. ej. `1.0000000000000001e-07`).
 - **No** aplicar `round()` antes de guardar; el formato solo al mostrar.
@@ -620,7 +566,7 @@ Ver tabla en sección 3. Actions = compute (GitHub); inferencia = tokens del mod
 ---
 
 
-## 14. Referencias
+## 13. Referencias
 
 - gh-aw Billing: <https://github.github.com/gh-aw/reference/billing/>
 - AI Credits Specification: <https://github.github.com/gh-aw/specs/ai-credits-specification/>
@@ -629,5 +575,4 @@ Ver tabla en sección 3. Actions = compute (GitHub); inferencia = tokens del mod
 - GitHub Actions billing: <https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions>
 - Dataset GHAW-H: Valenzuela-Toledo, P., Kehrer, T., & Panichella, S. (2026). *GHAW-H: A Dataset of GitHub Agentic Workflow Histories* (v0.1.2). Zenodo. <https://huggingface.co/datasets/pavtch/GHAW-H>
 - Propuesta del proyecto (contexto): *Estudio Empírico de los Costos de Ejecución en GitHub Agentic Workflows* (G. Caniupán y C. Ñanco, Universidad de La Frontera).
-- Actions timing endpoint: `GET /repos/{owner}/{repo}/actions/runs/{run_id}/timing`
 - Bouzenia, I., & Pradel, M. (2024). *Resource Usage and Optimization Opportunities in Workflows of GitHub Actions*. En 2024 IEEE/ACM 46th International Conference on Software Engineering (ICSE '24), 1–12. DOI: <https://doi.org/10.1145/3597503.3623303> · PDF: <https://software-lab.org/publications/icse2024_workflows.pdf>. Sección 3.2 y comparación en la sección 8.3.
