@@ -47,6 +47,7 @@ Los resultados completos están en `billing/output/billing_runs_all.csv` (nivel 
 
 ```
 gaw_billing/
+├── LICENSE                          # Licencia del código y la documentación
 ├── requirements.txt                 # Dependencias (solo biblioteca estándar + gh/gh-aw)
 ├── README.md                        # Este archivo
 └── billing/
@@ -57,9 +58,12 @@ gaw_billing/
     ├── extract_run_billing.ipynb    # Versión notebook, paso a paso
     ├── from_dataset_to_billing.py   # Flujo dataset GHAW-H -> run -> billing
     ├── merge_billing.py             # Consolida los CSV por repo
+    ├── summarize_results.py         # Resumen de resultados (RQ1-RQ3) desde los datos
+    ├── task_categories.csv          # Mapa run -> categoría de tarea
     └── output/
         ├── billing_runs_all.csv     # Consolidado a nivel run (5 casos)
         ├── billing_jobs_all.csv     # Consolidado a nivel job
+        ├── resumen_resultados.md    # Resumen de resultados generado
         └── <owner>__<repo>/         # Evidencia cruda + CSV por repositorio
 ```
 
@@ -69,28 +73,58 @@ gaw_billing/
 - GitHub CLI `gh` autenticado: `gh auth login`.
 - Extensión de gh-aw: `gh extension install github/gh-aw`.
 
-## Cómo reproducir
+## Reproducción
+
+**Punto de entrada (datos conservados).** La reproducción de los resultados comienza
+desde los datos ya incluidos en el repositorio:
 
 ```bash
-# Flujo completo para un repositorio del dataset (descarga evidencia y escribe CSV)
-python billing/from_dataset_to_billing.py --repo vaadin/flow --workflow doc-bot
+python billing/merge_billing.py        # consolida billing/output/<repo>/billing_runs.csv
+python billing/summarize_results.py    # métricas y tabla de RQ1-RQ3
+```
 
-# Repetir para cada caso del conjunto:
-python billing/from_dataset_to_billing.py --repo microsoft/vstest --workflow issue-repro-triage
-python billing/from_dataset_to_billing.py --repo microsoft/vstest --workflow code-simplifier
-python billing/from_dataset_to_billing.py --repo githubnext/agentics --workflow link-checker
-python billing/from_dataset_to_billing.py --repo rancher/dashboard --workflow daily-issue-grooming
+No requiere red ni autenticación. Produce `billing/output/billing_runs_all.csv`,
+`billing/output/billing_jobs_all.csv` y `billing/output/resumen_resultados.md`.
 
-# Consolidar las salidas
+**Re-extracción desde la fuente (opcional).** Regenerar los datos desde cero requiere
+`gh` autenticado y la extensión `gh-aw`; la primera ejecución descarga y cachea el
+dataset GHAW-H (~75 MB):
+
+```bash
+python billing/from_dataset_to_billing.py --repo vaadin/flow --run 36728232182
+python billing/from_dataset_to_billing.py --repo microsoft/vstest --run 37312466277
+python billing/from_dataset_to_billing.py --repo microsoft/vstest --run 37328625151
+python billing/from_dataset_to_billing.py --repo githubnext/agentics --run 37269278813
+python billing/from_dataset_to_billing.py --repo rancher/dashboard --run 37235561667
+
 python billing/merge_billing.py
+python billing/summarize_results.py
 ```
 
 Salidas por repositorio en `billing/output/<owner>__<repo>/`: `billing_runs.csv`
 (nivel run), `billing_jobs.csv` (nivel job) y la evidencia cruda por run.
 
-> La extracción consulta la API de GitHub y requiere autenticación. El paquete incluye
-> la evidencia ya descargada en `billing/output/`, por lo que el análisis y la
-> consolidación (`merge_billing.py`) pueden ejecutarse sin repetir la extracción.
+> **Restricciones de reproducibilidad.** La re-extracción depende de la API de GitHub y
+> de la retención de artefactos (≈90 días), por lo que el AIC puede no estar disponible
+> para runs antiguos. La evidencia de los cinco casos está conservada en el repositorio,
+> de modo que los resultados pueden reproducirse sin re-extraer.
+
+## Procedencia de los datos
+
+- **Fuente:** dataset **GHAW-H** (Valenzuela-Toledo, Kehrer y Panichella, v0.1.2, 2026;
+  DOI 10.5281/zenodo.22084012), con repositorios públicos e historial de workflows agénticos.
+- **Acceso:** API REST de GitHub (`actions/runs`, `jobs`, `timing`, `artifacts`) y el
+  artefacto `usage` de gh-aw.
+- **Fecha de extracción:** 2026-10-05.
+- **Criterios de selección:** repositorio presente en GHAW-H; workflow con definición
+  `.md`; run `completed` con el job `agent` ejecutado (no `skipped`); modelo con precio
+  en el catálogo (se descartaron runs con `AIC = 0` por modelo sin precio); un run por workflow.
+- **Herramientas y versiones:** Python 3.10+, GitHub CLI `gh`, extensión `gh-aw` v0.86.2,
+  dataset GHAW-H v0.1.2.
+- **Transformaciones:** por job, `C_Actions = Σ ⌈t_j⌉ · r_j` (minutos redondeados a la
+  unidad superior × tarifa del SKU); `C_IA = AIC × 0,01`; `C_run = C_Actions + C_IA`.
+  No se redondea ningún valor antes de guardarlo (detalle en
+  `billing/docs/DOCUMENTACION_BILLING.md`).
 
 ## Resultados por pregunta de investigación
 
@@ -133,3 +167,8 @@ El paquete es parcial y se ampliará durante el desarrollo de la investigación.
   (`actions_cost_usd_notional`).
 - `aic = null` significa **sin dato**, nunca costo cero.
 - No se redondea ningún valor antes de guardarlo en el CSV.
+
+## Licencia
+
+Código y documentación bajo licencia **MIT** (ver [`LICENSE`](LICENSE)). La evidencia
+cruda pertenece a los repositorios de origen; el dataset GHAW-H conserva su propia licencia.

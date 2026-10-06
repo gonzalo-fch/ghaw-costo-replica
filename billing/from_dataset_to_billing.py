@@ -130,6 +130,24 @@ def agent_ran(repo, run_id):
     return bool(agent) and agent.get("conclusion") != "skipped"
 
 
+def upsert_csv(path, new_rows, key_fields):
+    """Inserta/actualiza filas en un CSV por clave, sin duplicar ni pisar otros runs."""
+    if not new_rows:
+        return
+    existing = []
+    if path.exists():
+        with path.open(newline="", encoding="utf-8") as fh:
+            existing = list(csv.DictReader(fh))
+    new_keys = {tuple(str(r.get(k, "")) for k in key_fields) for r in new_rows}
+    kept = [r for r in existing
+            if tuple(str(r.get(k, "")) for k in key_fields) not in new_keys]
+    rows = kept + new_rows
+    with path.open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def main():
     ap = argparse.ArgumentParser(description="Dataset GHAW-H -> run -> billing")
     ap.add_argument("--repo", required=True, help="owner/repo presente en el dataset")
@@ -194,18 +212,9 @@ def main():
 
     out_dir = Path(args.out) / args.repo.replace("/", "__")
     out_dir.mkdir(parents=True, exist_ok=True)
-    if row:
-        with (out_dir / "billing_runs.csv").open("w", newline="", encoding="utf-8") as fh:
-            writer = csv.DictWriter(fh, fieldnames=list(row.keys()))
-            writer.writeheader()
-            writer.writerow(row)
-        print("Escrito:", out_dir / "billing_runs.csv")
-    if job_rows:
-        with (out_dir / "billing_jobs.csv").open("w", newline="", encoding="utf-8") as fh:
-            writer = csv.DictWriter(fh, fieldnames=list(job_rows[0].keys()))
-            writer.writeheader()
-            writer.writerows(job_rows)
-        print("Escrito:", out_dir / "billing_jobs.csv")
+    upsert_csv(out_dir / "billing_runs.csv", [row], ["repo", "run_id", "run_attempt"])
+    upsert_csv(out_dir / "billing_jobs.csv", job_rows, ["run_id", "job_id"])
+    print("Escrito (acumulando):", out_dir / "billing_runs.csv")
 
     print(json.dumps(row, indent=2, ensure_ascii=False))
 
