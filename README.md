@@ -58,8 +58,9 @@ gaw_billing/
     ├── extract_run_billing.ipynb    # Versión notebook, paso a paso
     ├── from_dataset_to_billing.py   # Flujo dataset GHAW-H -> run -> billing
     ├── merge_billing.py             # Consolida los CSV por repo
-    ├── summarize_results.py         # Resumen de resultados (RQ1-RQ3) desde los datos
-    ├── task_categories.csv          # Mapa run -> categoría de tarea
+    ├── summarize_results.py         # Reproduce las tablas y métricas del informe
+    ├── task_categories.csv          # Mapa run -> categoría de tarea (RQ3)
+    ├── extraction_times.csv         # Tiempos de extracción medidos por caso
     └── output/
         ├── billing_runs_all.csv     # Consolidado a nivel run (5 casos)
         ├── billing_jobs_all.csv     # Consolidado a nivel job
@@ -80,7 +81,7 @@ desde los datos ya incluidos en el repositorio:
 
 ```bash
 python billing/merge_billing.py        # consolida billing/output/<repo>/billing_runs.csv
-python billing/summarize_results.py    # métricas y tabla de RQ1-RQ3
+python billing/summarize_results.py    # reproduce las tablas y métricas del informe
 ```
 
 No requiere red ni autenticación. Produce `billing/output/billing_runs_all.csv`,

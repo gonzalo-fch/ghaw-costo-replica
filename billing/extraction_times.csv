@@ -1,0 +1,6 @@
+repo,run_id,extraction_seconds,measured_at,note
+vaadin/flow,36728232182,15.2,2026-10-05,dataset en cache local
+microsoft/vstest,37312466277,20.9,2026-10-05,dataset en cache local
+microsoft/vstest,37328625151,20.2,2026-10-05,dataset en cache local
+githubnext/agentics,37269278813,20.0,2026-10-05,dataset en cache local
+rancher/dashboard,37235561667,16.6,2026-10-05,dataset en cache local

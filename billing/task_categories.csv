@@ -1,6 +1,6 @@
-repo,run_id,workflow_name,task_category
-vaadin/flow,36728232182,Documentation Bot,Documentación
-microsoft/vstest,37312466277,Issue Repro Triage & Auto-Fix,Issues/Pull requests
-microsoft/vstest,37328625151,Code Simplifier,Generación o revisión de código
-githubnext/agentics,37269278813,Daily Link Checker & Fixer,Mantenimiento
-rancher/dashboard,37235561667,Daily Issue Grooming,Issues/Pull requests
+repo,run_id,workflow,task_category
+vaadin/flow,36728232182,doc-bot,Documentación
+microsoft/vstest,37312466277,issue-repro-triage,Issues/PR
+microsoft/vstest,37328625151,code-simplifier,Código
+githubnext/agentics,37269278813,link-checker,Mantenimiento
+rancher/dashboard,37235561667,daily-issue-grooming,Issues/PR
